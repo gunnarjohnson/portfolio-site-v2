@@ -1,0 +1,20 @@
+// Portfolio App
+
+.app-container {
+  position: relative;
+  min-height: calc(100vh - 88px);
+  padding-top: 6em;
+  padding-bottom: 88px;
+
+  &--light {
+    background-color: $grayWhite;
+  }
+
+  &--medium {
+    background-color: $blueMedium;
+  }
+
+  &--dark {
+    background-color: $grayDark;
+  }
+}

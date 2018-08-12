@@ -1,0 +1,30 @@
+// Hero
+
+.hero {
+  padding-top: 6em;
+  text-align: center;
+  
+  &__title {
+    margin: 0;
+    font-size: 6em;
+  }
+
+  &__content {
+    margin: 0;
+    color: $blueBright;
+    font-family: $fontTagline;
+    font-size: 5em;
+    font-weight: 700;
+
+    &--light {
+      color: $blueBright;
+    }
+
+    &--medium {
+      color: $grayDark;
+    }
+    &--dark {
+      color: $blueLight;
+    }
+  }
+}

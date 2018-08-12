@@ -1,0 +1,54 @@
+// Section
+
+.section {
+  &__title {
+    font-family: $fontTitle;
+    font-size: 3em;
+    font-weight: 700;
+    @media screen and (width >= $device-xl) {
+      font-size: 4em;
+    }
+    @media screen and (width >= $device-md) {
+      font-size: 5em;
+    }
+
+    &--light {
+      color: $grayDark;
+    }
+
+    &--medium {
+      color: $white;
+    }
+
+    &--dark {
+      color: $grayWhite;
+    }
+  }
+
+  &__content {
+    font-family: $fontContent;
+    font-size: 1.25em;
+    @media screen and (width >= $device-xl) {
+      font-size: 2em;
+    }
+    @media screen and (width >= $device-md) {
+      font-size: 1.75em;
+    }
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+
+    &--light {
+      color: $grayDark;
+    }
+
+    &--medium {
+      color: $white;
+    }
+
+    &--dark {
+      color: $grayWhite;
+    }
+  }
+}

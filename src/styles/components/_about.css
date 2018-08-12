@@ -1,4 +1,14 @@
-// React Component
+// About
+
+.about {
+  &__title {
+
+  }
+  
+  &__content {
+
+  }
+}
 
 .react-component {
   text-align: center;

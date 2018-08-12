@@ -1,0 +1,53 @@
+// Skills
+
+.skills {
+  &__title {
+
+  }
+  
+  &-subset {
+
+    &--skills {
+
+    }
+
+    &--languages {
+
+    }
+
+    &--tools {
+
+    }
+
+    &--additional {
+
+    }
+
+    &__title {
+
+    }
+
+    &__list {
+
+      &-item {
+
+      }
+    }
+
+    &__sub-list {
+      display: inline;
+      padding: 0;
+      list-style: none;
+
+      &-item {
+        display: inline;
+        margin-left: 0.5em;
+        font-size: 0.55em;
+        font-style: italic;
+        @media screen and (width >= $device-xl) {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}

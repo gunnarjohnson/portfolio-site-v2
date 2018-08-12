@@ -9,16 +9,19 @@ footer {
 }
 
 .copyright {
-  color: $white;
-  font-family: $fontContent;
-
   &__link {
-    color: $white;
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
 
-    &:hover {
-      color: $blueLight;
+    &--light {
+      color: $grayDark;
+    }
+
+    &--medium {
+      color: $white;
+    }
+
+    &--dark {
+      color: $grayWhite;
     }
   }
 }

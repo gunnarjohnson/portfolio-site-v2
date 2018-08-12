@@ -7,8 +7,12 @@
 @import 'base/_libraries';
 @import 'base/_global';
 @import 'base/_fonts';
+@import 'base/_section';
 
 // Components
+@import 'components/_about';
+@import 'components/_app-container';
 @import 'components/_copyright';
-@import 'components/_react-app';
-@import 'components/_react-component';
+@import 'components/_header';
+@import 'components/_hero';
+@import 'components/_skills';
