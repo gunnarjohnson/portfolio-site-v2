@@ -1,7 +1,18 @@
 // Section
 
 .section {
+  &--theme-1 {
+    color: $grayDark;
+  }
+  &--theme-2 {
+    color: $white;
+  }
+  &--theme-3 {
+    color: $grayWhite;
+  }
+
   &__title {
+    color: inherit;
     font-family: $fontTitle;
     font-size: 3em;
     font-weight: 700;
@@ -11,21 +22,23 @@
     @media screen and (width >= $device-md) {
       font-size: 5em;
     }
+  }
 
-    &--light {
-      color: $grayDark;
+  &__subtitle {
+    color: inherit;
+    font-family: $fontTitle;
+    font-size: 1.75em;
+    font-weight: 700;
+    @media screen and (width >= $device-xl) {
+      font-size: 2.5em;
     }
-
-    &--medium {
-      color: $white;
-    }
-
-    &--dark {
-      color: $grayWhite;
+    @media screen and (width >= $device-md) {
+      font-size: 2.25em;
     }
   }
 
   &__content {
+    color: inherit;
     font-family: $fontContent;
     font-size: 1.25em;
     @media screen and (width >= $device-xl) {
@@ -37,18 +50,6 @@
 
     &--uppercase {
       text-transform: uppercase;
-    }
-
-    &--light {
-      color: $grayDark;
-    }
-
-    &--medium {
-      color: $white;
-    }
-
-    &--dark {
-      color: $grayWhite;
     }
   }
 }

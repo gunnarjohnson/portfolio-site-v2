@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Contact = (props) => (
-  <section className="contact">
-    <h2 className={"contact__title section__title section__title--" + props.theme}>Contact</h2>
-    <a className={"about__content section__content section__content--" + props.theme} href="mailto:gunnarmjohnson@gmail.com">gunnarmjohnson@gmail.com</a>
+  <section className={"contact section section--theme-" + props.theme}>
+    <h2 className="contact__title section__title">Contact</h2>
+    <a className="about__content section__content" href="mailto:gunnarmjohnson@gmail.com">
+      gunnarmjohnson@gmail.com
+    </a>
   </section>
 );
 

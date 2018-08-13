@@ -3,18 +3,18 @@
 .app-container {
   position: relative;
   min-height: calc(100vh - 88px);
-  padding-top: 6em;
+  padding-top: 70px;
   padding-bottom: 88px;
 
-  &--light {
+  &--theme-1 {
     background-color: $grayWhite;
   }
 
-  &--medium {
+  &--theme-2 {
     background-color: $blueMedium;
   }
 
-  &--dark {
+  &--theme-3 {
     background-color: $grayDark;
   }
 }
