@@ -5,15 +5,13 @@
   min-height: calc(100vh - 88px);
   padding-top: 70px;
   padding-bottom: 88px;
-
+  transition: background-color 0.2s ease-in-out;
   &--theme-1 {
     background-color: $grayWhite;
   }
-
   &--theme-2 {
     background-color: $blueMedium;
   }
-
   &--theme-3 {
     background-color: $grayDark;
   }

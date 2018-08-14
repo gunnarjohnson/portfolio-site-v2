@@ -2,8 +2,8 @@ import React from 'react';
 
 const Tools = () => (
   <div className="technical-subset">
-    <h3 className="technical-subset__title section__subtitle">Tools</h3>
-    <ul className="technical-subset__list section__content">
+    <h3 className="heading technical-subset__title section__subtitle">Tools</h3>
+    <ul className="list technical-subset__list section__content">
       <li className="technical-subset__list-item">CMS
         <ul className="technical-subset__sub-list">
           <li className="technical-subset__sub-list-item">WordPress</li>

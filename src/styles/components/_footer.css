@@ -1,0 +1,34 @@
+// Footer
+
+.footer {
+  margin: 0;
+  padding: 0 20px;
+  transition: background-color 0.2s ease-in-out;
+  @media screen and (width >= $device-lg) {
+    padding: 0 40px;
+  }
+  &--theme-1 {
+    background-color: $grayDark;
+    color: $grayWhite;
+
+    a:hover {
+      color: $blueBright;
+    }
+  }
+  &--theme-2 {
+    background-color: $white;
+    color: $grayDark;
+
+    a:hover {
+      color: $blueMedium;
+    }
+  }
+  &--theme-3 {
+    background-color: $grayWhite;
+    color: $grayDark;
+
+    a:hover {
+      color: $blueLight;
+    }
+  }
+}

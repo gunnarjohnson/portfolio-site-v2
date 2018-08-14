@@ -1,12 +1,28 @@
 // About
 
 .about {
-  &__title {
+  @media screen and (width >= $device-md) {
+    display: flex;
+  }
 
+  &__title {
+    margin: 0;
+    @media screen and (width >= $device-md) {
+      margin: 50px 20px;
+      line-height: 0.8em;
+    }
+    @media screen and (width >= $device-lg) {
+      margin: 80px 40px;
+    }
   }
   
   &__content {
-
+    @media screen and (width >= $device-md) {
+      margin: 50px 20px;
+    }
+    @media screen and (width >= $device-lg) {
+      margin: 80px 40px;
+    }
   }
 }
 

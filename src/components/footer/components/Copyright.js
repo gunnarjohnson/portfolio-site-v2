@@ -15,15 +15,17 @@ class Copyright extends React.Component {
 
   render() {
     return (
-      <div className={"copyright section section--theme-" + this.props.theme}>
+      <div className="copyright">
         <p className="section__content">
-          ©
-          {' '}
-          {this.state.copyrightYear}
-          {this.state.currentYear && '-' + this.state.currentYear} 
-          {' '}
+          <span className="content">
+            ©
+            {' '}
+            {this.state.copyrightYear}
+            {this.state.currentYear && '-' + this.state.currentYear} 
+            {' '}
+          </span>
           <a 
-            className={"copyright__link copyright__link--theme-" + this.props.theme}
+            className={"link copyright__link copyright__link--theme-" + this.props.theme}
             href="https://github.com/gunnarjohnson" target="_blank"
           >
             Gunnar Johnson

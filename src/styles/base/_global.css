@@ -8,6 +8,10 @@ body {
   min-height: 100%;
 }
 
-a {
+.button, .content, .heading, .link, .list {
+  transition: color 0.2s ease-in-out;
+}
+
+.link {
   color: inherit;
 }

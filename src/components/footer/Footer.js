@@ -1,10 +1,9 @@
 import React from 'react';
-import Copyright from './Copyright';
+import Copyright from './components/Copyright';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = (props) => (
-  <footer className={"section section--theme-" + props.theme}>
-    <div className="section__content" />
+  <footer className={"footer section footer--theme-" + props.theme}>
     <Copyright theme={props.theme} />
   </footer>
 );

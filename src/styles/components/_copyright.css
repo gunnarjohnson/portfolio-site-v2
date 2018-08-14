@@ -12,7 +12,7 @@ footer {
   &__link {
     text-decoration: none;
 
-    &--theme-1 {
+    /* &--theme-1 {
       color: $grayDark;
     }
 
@@ -22,6 +22,6 @@ footer {
 
     &--theme-3 {
       color: $grayWhite;
-    }
+    } */
   }
 }
