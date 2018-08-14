@@ -1,20 +1,38 @@
 // Hero
 
 .hero {
-  padding-top: 3em;
+  padding-top: 50px;
   text-align: center;
+  @media screen and (width >= $device-md) {
+    padding-top: 100px;
+  }
+  @media screen and (width >= $device-lg) {
+    padding-top: 150px;
+  }
   
   &__title {
     margin: 0;
-    font-size: 6em;
+    font-size: 2.5em;
+    @media screen and (width >= $device-sm) {
+      font-size: 3.75em;
+    }
+    @media screen and (width >= $device-lg) {
+      font-size: 6em;
+    }
   }
 
   &__content {
     margin: 0;
     color: $blueBright;
     font-family: $fontTagline;
-    font-size: 5em;
+    font-size: 2em;
     font-weight: 700;
+    @media screen and (width >= $device-sm) {
+      font-size: 3em;
+    }
+    @media screen and (width >= $device-lg) {
+      font-size: 5em;
+    }
 
     &--theme-1 {
       color: $blueBright;
@@ -25,6 +43,32 @@
     }
     &--theme-3 {
       color: $blueLight;
+    }
+  }
+
+  &__icon {
+    font-size: 1.75em;
+    @media screen and (width >= $device-sm) {
+      font-size: 2em;
+    }
+    @media screen and (width >= $device-lg) {
+      font-size: 3em;
+    }
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100px;
+      margin: 10px auto 0;
+      @media screen and (width >= $device-sm) {
+        width: 125px;
+        margin-top: 15px;
+      }
+      @media screen and (width >= $device-lg) {
+        width: 175px;
+        margin-top: 20px;
+      }
     }
   }
 }
