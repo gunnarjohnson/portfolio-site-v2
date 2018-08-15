@@ -7,7 +7,7 @@ import Hero from './Hero';
 import Portfolio from './Portfolio';
 import Technical from './technical/Technical';
 
-class ReactApp extends React.Component {
+class PortfolioApp extends React.Component {
   state = {
     theme: 1
   };
@@ -20,7 +20,7 @@ class ReactApp extends React.Component {
       theme = theme + 1;
     }
     this.setState({ theme });
-  }
+  };
 
   render() {
     return (
@@ -37,4 +37,4 @@ class ReactApp extends React.Component {
   }
 }
 
-export default ReactApp;
+export default PortfolioApp;

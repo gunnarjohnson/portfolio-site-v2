@@ -5,7 +5,6 @@
   flex-wrap: wrap;
 
   &__title {
-    display: none;
     flex-basis: 100%;
     text-align: center;
   }
