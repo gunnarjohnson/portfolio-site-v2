@@ -3,6 +3,7 @@
 .technical {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 80px;
 
   &__title {
     flex-basis: 100%;
@@ -35,11 +36,7 @@
         margin-right: auto;
       }
     }
-
-    &__title {
-      
-    }
-
+    
     &__list {
       padding: 0;
       list-style: none;

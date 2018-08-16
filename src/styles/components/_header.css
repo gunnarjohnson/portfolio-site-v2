@@ -10,6 +10,15 @@
   padding: 10px 0;
   box-shadow: 0 0 15px black;
   transition: background-color 0.2s ease-in-out;
+  &--theme-1 {
+    background-color: $blueBright;
+  }
+  &--theme-2 {
+    background-color: $grayDark;
+  }
+  &--theme-3 {
+    background-color: $blueLight;
+  }
 
   &:after {
     content: "";
@@ -21,26 +30,14 @@
     background-color: black;
   }
 
-  &--theme-1 {
-    background: $blueBright;
-  }
-
-  &--theme-2 {
-    background-color: $grayDark;
-  }
-
-  &--theme-3 {
-    background-color: $blueLight;
-  }
-
   &__button {
+    overflow: hidden;
     margin: auto 20px;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
-    cursor:pointer;
-    overflow: hidden;
     outline: none;
+    cursor:pointer;
     @media screen and (width >= $device-lg) {
       margin: auto 40px;
     }
@@ -51,15 +48,12 @@
     @media screen and (width >= $device-md) {
       font-size: 2.5em;
     }
-
     &--theme-1 {
       color: $grayDark;
     }
-
     &--theme-2 {
       color: $white;
     }
-
     &--theme-3 {
       color: $grayDark;
     }

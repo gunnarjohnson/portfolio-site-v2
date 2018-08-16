@@ -13,37 +13,43 @@ class Portfolio extends React.Component {
       title: 'Autoquip', 
       content: 'A client website with a custom WordPress theme. Developed various components and added extensive CSS fallbacks for Internet Explorer.',
       image: ImgAutoquip,
-      url: 'https://autoquip.com/'
+      url: 'https://autoquip.com/',
+      type: 'Site'
     },
     {
       title: 'Supply Chain Automation',
       content: 'A client website with a custom WordPress theme. Developed pages, header, footer, etc.',
       image: ImgSupplyChain,
-      url: 'http://supplychain.dev.square205.com'
+      url: 'http://supplychain.dev.square205.com',
+      type: 'Site'
     },
     {
       title: 'Office Furniture Distributors',
       content: 'A client website with a customized WordPress theme. Developed pages, forms, footer, etc.',
       image: ImgOffDist,
-      url: 'https://ofdist.com/'
+      url: 'https://ofdist.com/',
+      type: 'Site'
     },
     {
       title: 'Lily of the Desert',
       content: 'A client website with multiple WordPress themes. Developed new pages for existing website and added multi-theme functionality.',
       image: ImgLilyDesert,
-      url: 'http://www.lilyofthedesert.com/'
+      url: 'http://www.lilyofthedesert.com/',
+      type: 'Site'
     },
     {
       title: 'Pomodoro Clock',
       content: 'An interval timer web app built on top of my own custom React boilerplate. Developed with Babel, PostCSS, Webpack, etc.',
       image: ImgPomodoroClock,
-      url: 'https://gunnarjohnson.github.io/fcc-pomodoro-clock/'
+      url: 'https://gunnarjohnson.github.io/fcc-pomodoro-clock/',
+      type: 'App'
     },
     {
       title: 'TI-2511 Calculator',
       content: 'A web app that emulates a Texas Instruments calculator and enables the user to perform basic math.',
       image: ImgCalculator,
-      url: 'https://gunnarjohnson.github.io/fcc-js-calculator/'
+      url: 'https://gunnarjohnson.github.io/fcc-js-calculator/',
+      type: 'App'
     }
   ];
 
@@ -53,12 +59,17 @@ class Portfolio extends React.Component {
         <h2 className="heading portfolio__title section__title">Portfolio</h2>
         {this.portfolioData.map((item, index) => (
           <div className="portfolio-item" key={index}>
-            <a className="portfolio-item__link" href={item.url} target="_blank">
-              <img className="portfolio-item__image" src={item.image} />
-            </a>
+            <img className="portfolio-item__image" src={item.image} />
             <div className="portfolio-item__container">
               <h3 className="heading portfolio-item__title section__subtitle">{item.title}</h3>
               <p className="content portfolio-item__content section__content">{item.content}</p>
+              <a 
+                className={"link portfolio-item__link portfolio-item__link--theme-" + this.props.theme} 
+                href={item.url} 
+                target="_blank"
+              >
+                Open {item.type}
+              </a>
             </div>
           </div>
         ))}

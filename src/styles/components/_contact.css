@@ -15,26 +15,26 @@
     padding: 0 40px;
   }
   &--theme-1 {
-    background-color: $blueBright;
     color: $grayDark;
+    background-color: $blueBright;
 
-    a:hover {
+    .link:hover {
       color: $grayWhite;
     }
   }
   &--theme-2 {
-    background-color: $grayDark;
     color: $white;
+    background-color: $grayDark;
 
-    a:hover {
+    .link:hover {
       color: $blueMedium;
     }
   }
   &--theme-3 {
-    background-color: $blueLight;
     color: $grayDark;
+    background-color: $blueLight;
 
-    a:hover {
+    .link:hover {
       color: $grayWhite;
     }
   }

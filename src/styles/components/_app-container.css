@@ -2,9 +2,9 @@
 
 .app-container {
   position: relative;
-  min-height: calc(100vh - 88px);
+  min-height: calc(100vh - 63px);
   padding-top: 70px;
-  padding-bottom: 88px;
+  padding-bottom: 63px;
   transition: background-color 0.2s ease-in-out;
   &--theme-1 {
     background-color: $grayWhite;
@@ -15,4 +15,13 @@
   &--theme-3 {
     background-color: $grayDark;
   }
+  @media screen and (width >= $device-md) {
+    min-height: calc(100vh - 88px);
+    padding-bottom: 88px;
+  }
+  @media screen and (width >= $device-xl) {
+    min-height: calc(100vh - 100px);
+    padding-bottom: 100px;
+  }
+  
 }

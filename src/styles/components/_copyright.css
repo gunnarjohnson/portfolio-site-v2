@@ -11,17 +11,5 @@ footer {
 .copyright {
   &__link {
     text-decoration: none;
-
-    /* &--theme-1 {
-      color: $grayDark;
-    }
-
-    &--theme-2 {
-      color: $white;
-    }
-
-    &--theme-3 {
-      color: $grayWhite;
-    } */
   }
 }

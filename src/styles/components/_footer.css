@@ -2,32 +2,28 @@
 
 .footer {
   margin: 0;
-  padding: 0 20px;
   transition: background-color 0.2s ease-in-out;
-  @media screen and (width >= $device-lg) {
-    padding: 0 40px;
-  }
   &--theme-1 {
-    background-color: $grayDark;
     color: $grayWhite;
+    background-color: $grayDark;
 
-    a:hover {
+    .link:hover {
       color: $blueBright;
     }
   }
   &--theme-2 {
-    background-color: $white;
     color: $grayDark;
+    background-color: $white;
 
-    a:hover {
+    .link:hover {
       color: $blueMedium;
     }
   }
   &--theme-3 {
-    background-color: $grayWhite;
     color: $grayDark;
+    background-color: $grayWhite;
 
-    a:hover {
+    .link:hover {
       color: $blueLight;
     }
   }
