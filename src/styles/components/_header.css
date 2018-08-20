@@ -2,6 +2,7 @@
 
 .header {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   right: 0;
@@ -11,9 +12,11 @@
   box-shadow: 0 0 15px $black;
   transition: background-color 0.2s ease-in-out;
   &--theme-light {
+    color: $lightBlack;
     background-color: $lightBright;
   }
   &--theme-dark {
+    color: $lightWhite;
     background-color: $darkBright;
   }
 
@@ -30,6 +33,7 @@
   &__button {
     overflow: hidden;
     margin: auto 20px;
+    color: inherit;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -41,15 +45,27 @@
   }
 
   &__icon {
+    color: inherit;
     font-size: 2em;
+    transition: transform 0.2s ease-in-out;
     @media screen and (width >= $device-md) {
       font-size: 2.5em;
     }
-    &--theme-light {
-      color: $lightBlack;
-    }
     &--theme-dark {
-      color: $darkWhite;
+      transform: rotate(360deg);
+    }
+  }
+
+  &__nav {
+    margin: 0 40px 0 auto;
+    display: flex;
+    align-items: center;
+
+    &-link {
+      text-decoration: none;
+      & + & {
+        margin-left: 20px;
+      }
     }
   }
 }

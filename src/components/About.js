@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = (props) => (
-  <section className={"about section section--theme-" + props.theme}>
+  <section id="about" className={"about section section--theme-" + props.theme}>
     <h2 className="heading about__title section__title">About</h2>
     <p className="content about__content section__content">
       <span className="section__content--uppercase">I build web apps and websites. </span>

@@ -82,7 +82,7 @@ class Portfolio extends React.Component {
 
   render() {
     return(
-      <section className={"portfolio section section--theme-" + this.props.theme}>
+      <section id="portfolio" className={"portfolio section section--theme-" + this.props.theme}>
         <h2 className="heading portfolio__title section__title">Portfolio</h2>
         {this.portfolioData.map((item, index) => (
           <div className="portfolio-item" key={index}>

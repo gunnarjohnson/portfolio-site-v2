@@ -32,6 +32,15 @@
         }
       }
     }
+    &:nth-child(even) {
+      .portfolio-item {
+        &__container {
+          @media screen and (width >= $device-md) { 
+            margin-right: 0;
+          }
+        }
+      }
+    }
     @media screen and (width >= $device-md) {
       flex-direction: row;
       align-items: flex-start;
@@ -47,10 +56,14 @@
     }
 
     &__image {
-      width: 300px;
-      height: 300px;
+      width: 280px;
+      height: 280px;
       border-radius: 3px;
       box-shadow: 0 1px 25px 2.5px $lightBlack;
+      @media screen and (width >= $device-sm) {
+        width: 300px;
+        height: 300px;
+      }
     }
 
     &__container {
@@ -68,6 +81,7 @@
     }
 
     &__content {
+      min-height: 64px;
       font-size: 1.5em;
       @media screen and (width >= 1600px) {
         font-size: 1.75em;
@@ -98,7 +112,14 @@
       &-container {
         display: flex;
         justify-content: space-between;
-        width: 350px;
+        width: 280px;
+        margin: 0 auto;
+        @media screen and (width >= $device-sm) {
+          width: 350px;
+        }
+        @media screen and (width >= $device-md) {
+          margin: 0;
+        }
       }
     }
 
@@ -135,7 +156,14 @@
       &-container {
         display: flex;
         justify-content: space-between;
-        width: 350px;
+        width: 280px;
+        margin: 0 auto;
+        @media screen and (width >= $device-sm) {
+          width: 350px;
+        }
+        @media screen and (width >= $device-md) {
+          margin: 0;
+        }
       }
     }
   }

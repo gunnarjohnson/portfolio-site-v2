@@ -27,10 +27,10 @@ class PortfolioApp extends React.Component {
       <div className={"app-container app-container--theme-" + this.state.theme}>
         <Header theme={this.state.theme} changeTheme={this.changeTheme} />
         <Hero theme={this.state.theme} />
-        <About id="about" theme={this.state.theme} />
-        <Portfolio id="portfolio" theme={this.state.theme} />
-        <Technical id="technical" theme={this.state.theme} />
-        <Contact id="contact" theme={this.state.theme} />
+        <About theme={this.state.theme} />
+        <Portfolio theme={this.state.theme} />
+        <Technical theme={this.state.theme} />
+        <Contact theme={this.state.theme} />
         <Footer theme={this.state.theme} />
       </div>
     );
