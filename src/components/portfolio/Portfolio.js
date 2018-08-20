@@ -77,7 +77,7 @@ class Portfolio extends React.Component {
     react: 'React',
     sass: 'Sass',
     webpack: 'Webpack',
-    wordpress: 'Wordpress'
+    wordpress: 'WordPress'
   };
 
   render() {

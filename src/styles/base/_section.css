@@ -5,25 +5,18 @@
   @media screen and (width >= $device-lg) {
     margin: 0 40px;
   }
-  &--theme-1 {
-    color: $grayDark;
+  &--theme-light {
+    color: $lightBlack;
 
     a:hover {
-      color: $blueBright;
+      color: $lightBright;
     }
   }
-  &--theme-2 {
-    color: $white;
+  &--theme-dark {
+    color: $darkWhite;
 
     a:hover {
-      color: $grayDark;
-    }
-  }
-  &--theme-3 {
-    color: $grayWhite;
-
-    a:hover {
-      color: $blueLight;
+      color: $darkBright;
     }
   }
 

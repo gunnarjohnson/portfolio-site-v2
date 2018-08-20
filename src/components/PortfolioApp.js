@@ -9,15 +9,15 @@ import Technical from './technical/Technical';
 
 class PortfolioApp extends React.Component {
   state = {
-    theme: 1
+    theme: 'light'
   };
   
   changeTheme = () => {
     let theme = this.state.theme;
-    if (theme == 3) {
-      theme = 1;
+    if (theme == 'light') {
+      theme = 'dark';
     } else {
-      theme = theme + 1;
+      theme = 'light';
     }
     this.setState({ theme });
   };

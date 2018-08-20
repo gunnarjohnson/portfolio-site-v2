@@ -1,17 +1,15 @@
 // Colors
 
-// Blue
-$blueLight: #aad7ed;
-$blueBright: #25ABEC;
-$blueGray: #89b9d3;
-$blueMedium: #2382B0;
-$bluePrimary: #226383;
-$blueDark: #1F4354;
+// Light Theme
+$lightBlack: #111d23;
+$lightBright: #25abec;
+$lightWhite: #e0e8ff;
 
-// Gray
-$grayWhite: #e0e8ff;
-$grayLight: #a7c3d1;
-$grayDark: #111D23;
+// Dark Theme
+$darkBlack: #2c2e33;
+$darkBright: #2c68a1;
+$darkWhite: #a7c3d1;
 
-// White
+// Neutral
+$black: #000000;
 $white: #ffffff;

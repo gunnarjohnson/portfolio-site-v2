@@ -8,16 +8,13 @@
   left: 0;
   height: 50px;
   padding: 10px 0;
-  box-shadow: 0 0 15px black;
+  box-shadow: 0 0 15px $black;
   transition: background-color 0.2s ease-in-out;
-  &--theme-1 {
-    background-color: $blueBright;
+  &--theme-light {
+    background-color: $lightBright;
   }
-  &--theme-2 {
-    background-color: $grayDark;
-  }
-  &--theme-3 {
-    background-color: $blueLight;
+  &--theme-dark {
+    background-color: $darkBright;
   }
 
   &:after {
@@ -27,7 +24,7 @@
     right: 0;
     left: 0;
     bottom: 10px;
-    background-color: black;
+    background-color: $black;
   }
 
   &__button {
@@ -48,14 +45,11 @@
     @media screen and (width >= $device-md) {
       font-size: 2.5em;
     }
-    &--theme-1 {
-      color: $grayDark;
+    &--theme-light {
+      color: $lightBlack;
     }
-    &--theme-2 {
-      color: $white;
-    }
-    &--theme-3 {
-      color: $grayDark;
+    &--theme-dark {
+      color: $darkWhite;
     }
   }
 }

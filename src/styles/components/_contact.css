@@ -14,28 +14,20 @@
   @media screen and (width >= $device-lg) {
     padding: 0 40px;
   }
-  &--theme-1 {
-    color: $grayDark;
-    background-color: $blueBright;
+  &--theme-light {
+    color: $lightBlack;
+    background-color: $lightBright;
 
     .link:hover {
-      color: $grayWhite;
+      color: $lightWhite;
     }
   }
-  &--theme-2 {
-    color: $white;
-    background-color: $grayDark;
+  &--theme-dark {
+    color: $darkWhite;
+    background-color: $darkBright;
 
     .link:hover {
-      color: $blueMedium;
-    }
-  }
-  &--theme-3 {
-    color: $grayDark;
-    background-color: $blueLight;
-
-    .link:hover {
-      color: $grayWhite;
+      color: $darkBlack;
     }
   }
 

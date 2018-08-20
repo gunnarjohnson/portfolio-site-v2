@@ -50,7 +50,7 @@
       width: 300px;
       height: 300px;
       border-radius: 3px;
-      box-shadow: 0 1px 25px 2.5px $grayDark;
+      box-shadow: 0 1px 25px 2.5px $lightBlack;
     }
 
     &__container {
@@ -88,14 +88,11 @@
       & + & {
         margin-left: 0.25em;
       }
-      &--theme-1 {
-        color: $grayDark;
+      &--theme-light {
+        color: $lightBlack;
       }
-      &--theme-2 {
-        color: $white;
-      }
-      &--theme-3 {
-        color: $grayWhite;
+      &--theme-dark {
+        color: $darkWhite;
       }
 
       &-container {
@@ -116,24 +113,17 @@
       font-family: $fontTitle;
       font-size: 1.5em;
       text-decoration: none;
-      &--theme-1 {
-        background-color: $blueBright;
+      &--theme-light {
+        background-color: $lightBright;
         &:hover {
-          background-color: $grayDark;
+          background-color: $lightBlack;
         }
       }
-      &--theme-2 {
-        background-color: $grayDark;
+      &--theme-dark {
+        background-color: $darkBright;
           &:hover {
-            background-color: $white;
+            background-color: $darkWhite;
           }
-      }
-      &--theme-3 {
-        color: $grayDark;
-        background-color: $blueLight;
-        &:hover {
-          background-color: $grayWhite;
-        }
       }
       @media screen and (width >= $device-md) {
         width: 150px;

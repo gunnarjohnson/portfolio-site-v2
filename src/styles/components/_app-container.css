@@ -6,14 +6,11 @@
   padding-top: 70px;
   padding-bottom: 63px;
   transition: background-color 0.2s ease-in-out;
-  &--theme-1 {
-    background-color: $grayWhite;
+  &--theme-light {
+    background-color: $lightWhite;
   }
-  &--theme-2 {
-    background-color: $blueMedium;
-  }
-  &--theme-3 {
-    background-color: $grayDark;
+  &--theme-dark {
+    background-color: $darkBlack;
   }
   @media screen and (width >= $device-md) {
     min-height: calc(100vh - 88px);

@@ -3,28 +3,20 @@
 .footer {
   margin: 0;
   transition: background-color 0.2s ease-in-out;
-  &--theme-1 {
-    color: $grayWhite;
-    background-color: $grayDark;
+  &--theme-light {
+    color: $lightWhite;
+    background-color: $lightBlack;
 
     .link:hover {
-      color: $blueBright;
+      color: $lightBright;
     }
   }
-  &--theme-2 {
-    color: $grayDark;
-    background-color: $white;
+  &--theme-dark {
+    color: $darkBlack;
+    background-color: $darkWhite;
 
     .link:hover {
-      color: $blueMedium;
-    }
-  }
-  &--theme-3 {
-    color: $grayDark;
-    background-color: $grayWhite;
-
-    .link:hover {
-      color: $blueLight;
+      color: $darkBright;
     }
   }
 }
