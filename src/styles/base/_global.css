@@ -8,7 +8,7 @@ body {
   min-height: 100%;
 }
 
-.button, .content, .heading, .link, .list {
+.button, .content, .heading, .icon, .link, .list {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 

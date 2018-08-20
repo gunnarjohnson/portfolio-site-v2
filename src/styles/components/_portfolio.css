@@ -74,6 +74,37 @@
       }
     }
 
+    &__icon {
+      height: 40px;
+      margin-right: 0.25em;
+      margin-bottom: 0.5em;
+      font-size: 1.75em;
+      @media screen and (width >= $device-sm) {
+        font-size: 2em;
+      }
+      @media screen and (width >= $device-lg) {
+        font-size: 3em;
+      }
+      & + & {
+        margin-left: 0.25em;
+      }
+      &--theme-1 {
+        color: $grayDark;
+      }
+      &--theme-2 {
+        color: $white;
+      }
+      &--theme-3 {
+        color: $grayWhite;
+      }
+
+      &-container {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+      }
+    }
+
     &__link {
       display: flex;
       align-items: center;
@@ -109,6 +140,12 @@
         height: 60px;
         margin: 0;
         font-size: 1.8em;
+      }
+
+      &-container {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
       }
     }
   }
