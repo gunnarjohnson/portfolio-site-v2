@@ -47,16 +47,18 @@
   &__icon {
     color: inherit;
     font-size: 2em;
-    transition: transform 0.2s ease-in-out;
     @media screen and (width >= $device-md) {
       font-size: 2.5em;
     }
     &--theme-dark {
       transform: rotate(360deg);
     }
+    &--desktop {
+      transition: transform 0.2s ease-in-out;
+    }
   }
 
-  &__nav {
+  &__desktop-nav {
     margin: 0 40px 0 auto;
     display: flex;
     align-items: center;
@@ -65,6 +67,38 @@
       text-decoration: none;
       & + & {
         margin-left: 20px;
+      }
+    }
+  }
+
+  &__mobile-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 44px);
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+      &--hidden {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+      }
+      &--visible {
+        opacity: 1;
+      }
+    }
+
+    &-link {
+      margin: auto 10px;
+    }
+
+    &-button {
+      margin-left: 4px;
+      transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+      &--visible {
+        transform: rotate(225deg);
       }
     }
   }

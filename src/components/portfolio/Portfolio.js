@@ -93,24 +93,24 @@ class Portfolio extends React.Component {
               <div className="portfolio-item__icon-container">
                 {item.icons.map((icon, index) => (
                   <span title={this.iconTitles[icon]} key={index}>
-                  {icon == 'jquery' &&
-                    <JQueryIcon
-                      color={"portfolio-item__icon--theme-" + this.props.theme} 
-                    />
-                  || icon == 'postcss' &&
-                      <PostCssIcon 
+                    {icon == 'jquery' &&
+                      <JQueryIcon
                         color={"portfolio-item__icon--theme-" + this.props.theme} 
                       />
-                  || icon == 'webpack' &&
-                      <WebpackIcon 
-                        color={"portfolio-item__icon--theme-" + this.props.theme} 
+                    || icon == 'postcss' &&
+                        <PostCssIcon 
+                          color={"portfolio-item__icon--theme-" + this.props.theme} 
+                        />
+                    || icon == 'webpack' &&
+                        <WebpackIcon 
+                          color={"portfolio-item__icon--theme-" + this.props.theme} 
+                        />
+                    ||
+                      <FontAwesomeIcon 
+                        className={"icon portfolio-item__icon portfolio-item__icon--theme-" + this.props.theme} 
+                        icon={['fab', icon]}
                       />
-                  ||
-                    <FontAwesomeIcon 
-                      className={"icon portfolio-item__icon portfolio-item__icon--theme-" + this.props.theme} 
-                      icon={['fab', icon]}
-                    />
-                  }
+                    }
                 </span>
                 ))}
               </div>

@@ -20,15 +20,6 @@ const Additional = () => (
           <li className="technical-subset__sub-list-item">Photoshop</li>
         </ul>
       </li>
-      <li className="technical-subset__list-item">Music
-        <ul className="technical-subset__sub-list">
-          <li className="technical-subset__sub-list-item">Bass/Guitar</li>
-          {','}
-          <li className="technical-subset__sub-list-item">Piano/Synth</li>
-          {','}
-          <li className="technical-subset__sub-list-item">Voice</li>
-        </ul>
-      </li>
       <li className="technical-subset__list-item">Video
         <ul className="technical-subset__sub-list">
           <li className="technical-subset__sub-list-item">After Effects</li>

@@ -46,6 +46,8 @@
     "postcss-strip-inline-comments": "^0.1.5",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-media": "^1.8.0",
+    "react-scroll": "^1.7.10",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8",
