@@ -16,7 +16,7 @@ class Copyright extends React.Component {
   render() {
     return (
       <div className="copyright">
-        <p className="section__content">
+        <p className="copyright__content section__content">
           <span className="content">
             ©
             {' '}
@@ -26,7 +26,7 @@ class Copyright extends React.Component {
           </span>
           <a 
             className={"link copyright__link copyright__link--theme-" + this.props.theme}
-            href="https://github.com/gunnarjohnson" target="_blank"
+            href="https://github.com/gunnarjohnson/portfolio-site-v2" target="_blank"
           >
             Gunnar Johnson
           </a>

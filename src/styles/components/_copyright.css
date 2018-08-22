@@ -9,6 +9,10 @@ footer {
 }
 
 .copyright {
+  &__content {
+    margin: 20px 0;
+  }
+  
   &__link {
     text-decoration: none;
   }

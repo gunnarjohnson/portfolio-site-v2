@@ -4,7 +4,7 @@ import Contact from './Contact';
 import Footer from './footer/Footer';
 import Header from './header/Header';
 import Hero from './Hero';
-import Portfolio from './portfolio/Portfolio';
+import Portfolio from './Portfolio';
 import Technical from './technical/Technical';
 
 class PortfolioApp extends React.Component {

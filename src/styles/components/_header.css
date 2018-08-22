@@ -14,10 +14,20 @@
   &--theme-light {
     color: $lightBlack;
     background-color: $lightBright;
+
+    .header__button:hover,
+    .link:hover {
+      color: $lightWhite;
+    }
   }
   &--theme-dark {
-    color: $lightWhite;
+    color: $darkWhite;
     background-color: $darkBright;
+
+    .header__button:hover,
+    .link:hover {
+      color: $darkBlack;
+    }
   }
 
   &:after {
@@ -46,7 +56,10 @@
 
   &__icon {
     color: inherit;
-    font-size: 2em;
+    font-size: 1.6em;
+    @media screen and (width >= 375px) {
+      font-size: 2em;
+    }
     @media screen and (width >= $device-md) {
       font-size: 2.5em;
     }
@@ -74,7 +87,10 @@
   &__mobile-nav {
     display: flex;
     justify-content: flex-end;
-    width: calc(100% - 44px);
+    width: calc(100% - 35px);
+    @media screen and (width >= 375px) {
+      width: calc(100% - 44px);
+    }
 
     &-container {
       display: flex;

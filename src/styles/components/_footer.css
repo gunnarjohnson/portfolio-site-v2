@@ -19,4 +19,22 @@
       color: $darkBright;
     }
   }
+
+  &__icon {
+      height: 40px;
+      margin: 0.25em;
+      font-size: 1.75em;
+      @media screen and (width >= $device-sm) {
+        font-size: 2em;
+      }
+      @media screen and (width >= $device-lg) {
+        font-size: 3em;
+      }
+
+      &-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+      }
+    }
 }

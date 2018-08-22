@@ -5,6 +5,10 @@
   @media screen and (width >= $device-lg) {
     margin: 0 40px;
   }
+  @media screen and (width >= 1921px) {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
   &--theme-light {
     color: $lightBlack;
 
@@ -59,9 +63,11 @@
     @media screen and (width >= $device-xl) {
       font-size: 2em;
     }
-
     &--uppercase {
       text-transform: uppercase;
+    }
+    &--italic {
+      font-style: italic;
     }
   }
 }

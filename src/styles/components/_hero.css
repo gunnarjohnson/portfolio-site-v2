@@ -6,7 +6,7 @@
   @media screen and (width >= $device-md) {
     padding: 100px 0;
   }
-  @media screen and (width >= $device-lg) {
+  @media screen and (width >= 1400px) {
     padding: 150px 0;
   }
   

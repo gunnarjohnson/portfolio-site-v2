@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class MobileNav extends React.Component {
@@ -38,9 +39,9 @@ class MobileNav extends React.Component {
       <nav className="header__mobile-nav">
         <div className={"header__mobile-nav-container header__mobile-nav-container--" + (this.state.navItemsVisible ? "visible" : "hidden")}>
           {this.navOptions.map((navItem, index) => (
-            <a className="link header__mobile-nav-link" href={navItem.link} key={index}>
+            <AnchorLink className="link header__mobile-nav-link" href={navItem.link} offset='70' key={index}>
               <FontAwesomeIcon className="header__icon" icon={['fas', navItem.icon]} />
-            </a>
+            </AnchorLink>
           ))}
         </div>
         <button 

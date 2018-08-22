@@ -2,7 +2,7 @@ import React from 'react';
 
 const WebpackIcon = (props) => (
   <svg 
-    className={"svg-inline--fa fa-js fa-w-14 icon portfolio-item__icon " + props.color}
+    className={"svg-inline--fa fa-js fa-w-14 icon " + props.iconClass}
     viewBox="0 0 600 600"
     xmlns="http://www.w3.org/2000/svg" 
   >

@@ -2,9 +2,9 @@
 
 .app-container {
   position: relative;
-  min-height: calc(100vh - 63px);
+  min-height: calc(100vh - 137.5px);
   padding-top: 70px;
-  padding-bottom: 63px;
+  padding-bottom: 137.5px;
   transition: background-color 0.2s ease-in-out;
   &--theme-light {
     background-color: $lightWhite;
@@ -12,13 +12,22 @@
   &--theme-dark {
     background-color: $darkBlack;
   }
+  @media screen and (width >= $device-sm) {
+    min-height: calc(100vh - 139px);
+    padding-bottom: 139px;
+  }
+
   @media screen and (width >= $device-md) {
-    min-height: calc(100vh - 88px);
-    padding-bottom: 88px;
+    min-height: calc(100vh - 148px);
+    padding-bottom: 148px;
+  }
+  @media screen and (width >= $device-lg) {
+    min-height: calc(100vh - 156px);
+    padding-bottom: 156px;
   }
   @media screen and (width >= $device-xl) {
-    min-height: calc(100vh - 100px);
-    padding-bottom: 100px;
+    min-height: calc(100vh - 160px);
+    padding-bottom: 160px;
   }
   
 }

@@ -14,6 +14,7 @@ import { faWordpress } from '@fortawesome/free-brands-svg-icons/faWordpress';
 // ## Solid
 import { faAdjust } from '@fortawesome/free-solid-svg-icons/faAdjust';
 import { faClipboardList } from '@fortawesome/free-solid-svg-icons/faClipboardList';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons/faCoffee';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons/faPlusCircle';
@@ -21,5 +22,5 @@ import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 
 const faLib = library.add(
   faCss3, faGithub, faGulp, faHtml5, faJs, faPhp, faReact, faSass, faWordpress, 
-  faAdjust, faClipboardList, faEnvelope, faLaptopCode, faPlusCircle, faUser
+  faAdjust, faClipboardList, faCoffee, faEnvelope, faLaptopCode, faPlusCircle, faUser
 );

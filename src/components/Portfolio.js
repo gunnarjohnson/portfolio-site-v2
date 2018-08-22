@@ -1,16 +1,11 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Import Icons
-import JQueryIcon from './components/JQueryIcon';
-import PostCssIcon from './components/PostCssIcon';
-import WebpackIcon from './components/WebpackIcon';
-// Import Images
-import ImgAutoquip from '../../assets/images/portfolio_autoquip.png';
-import ImgCalculator from '../../assets/images/portfolio_calculator.png';
-import ImgLilyDesert from '../../assets/images/portfolio_lily-desert.png';
-import ImgOffDist from '../../assets/images/portfolio_off-dist.png';
-import ImgPomodoroClock from '../../assets/images/portfolio_pomodoro-clock.png';
-import ImgSupplyChain from '../../assets/images/portfolio_supply-chain.png';
+import Icons from './icons/Icons';
+import ImgAutoquip from '../assets/images/portfolio_autoquip.png';
+import ImgCalculator from '../assets/images/portfolio_calculator.png';
+import ImgLilyDesert from '../assets/images/portfolio_lily-desert.png';
+import ImgOffDist from '../assets/images/portfolio_off-dist.png';
+import ImgPomodoroClock from '../assets/images/portfolio_pomodoro-clock.png';
+import ImgSupplyChain from '../assets/images/portfolio_supply-chain.png';
 
 class Portfolio extends React.Component {
   portfolioData = [
@@ -24,7 +19,7 @@ class Portfolio extends React.Component {
     },
     {
       title: 'Supply Chain Automation',
-      content: 'A client website with a custom WordPress theme. Developed pages, header, footer, etc.',
+      content: 'A client website with a custom WordPress theme. Developed pages, header, footer, etc. (Development completed - review in progress.)',
       image: ImgSupplyChain,
       url: 'http://supplychain.dev.square205.com',
       type: 'Site',
@@ -66,20 +61,6 @@ class Portfolio extends React.Component {
     }
   ];
 
-  iconTitles = {
-    css3: 'CSS3',
-    gulp: 'Gulp',
-    html5: 'HTML5',
-    jquery: 'jQuery',
-    js: 'JavaScript',
-    php: 'PHP',
-    postcss: 'PostCSS',
-    react: 'React',
-    sass: 'Sass',
-    webpack: 'Webpack',
-    wordpress: 'WordPress'
-  };
-
   render() {
     return(
       <section id="portfolio" className={"portfolio section section--theme-" + this.props.theme}>
@@ -90,30 +71,11 @@ class Portfolio extends React.Component {
             <div className="portfolio-item__container">
               <h3 className="heading portfolio-item__title section__subtitle">{item.title}</h3>
               <p className="content portfolio-item__content section__content">{item.content}</p>
-              <div className="portfolio-item__icon-container">
-                {item.icons.map((icon, index) => (
-                  <span title={this.iconTitles[icon]} key={index}>
-                    {icon == 'jquery' &&
-                      <JQueryIcon
-                        color={"portfolio-item__icon--theme-" + this.props.theme} 
-                      />
-                    || icon == 'postcss' &&
-                        <PostCssIcon 
-                          color={"portfolio-item__icon--theme-" + this.props.theme} 
-                        />
-                    || icon == 'webpack' &&
-                        <WebpackIcon 
-                          color={"portfolio-item__icon--theme-" + this.props.theme} 
-                        />
-                    ||
-                      <FontAwesomeIcon 
-                        className={"icon portfolio-item__icon portfolio-item__icon--theme-" + this.props.theme} 
-                        icon={['fab', icon]}
-                      />
-                    }
-                </span>
-                ))}
-              </div>
+              <Icons 
+                iconContainer="portfolio-item__icon-container"
+                icons={item.icons}
+                iconClass="portfolio-item__icon"
+              />
               <div className="portfolio-item__link-container">
                 <a 
                   className={"link portfolio-item__link portfolio-item__link--theme-" + this.props.theme} 

@@ -1,12 +1,13 @@
 // About
 
 .about {
+  display: flex;
+  flex-wrap: wrap;
   @media screen and (width >= $device-md) {
-    display: flex;
+    flex-wrap: nowrap;
   }
 
   &__title {
-    margin: 0;
     @media screen and (width >= $device-md) {
       margin: 50px 20px;
       line-height: 0.8em;
@@ -17,11 +18,25 @@
   }
   
   &__content {
+    margin-top: 0;
     @media screen and (width >= $device-md) {
       margin: 50px 20px;
     }
     @media screen and (width >= $device-lg) {
       margin: 80px 40px;
+    }
+
+    &-block {
+      display: block;
+      & + & {
+        margin-top: 20px;
+      }
+    }
+
+    &-link {
+      color: inherit;
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }
