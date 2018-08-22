@@ -21,7 +21,7 @@ const About = (props) => (
         </a> 
         {' '}
         <span className="content">
-          - the foundation of this very site.
+          - the foundation of this site.
         </span>
       </span>
       <span className="content about__content-block">
