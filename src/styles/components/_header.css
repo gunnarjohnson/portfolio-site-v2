@@ -17,7 +17,9 @@
 
     .header__button:hover,
     .link:hover {
-      color: $lightWhite;
+      @media only screen and (width > $device-md) {
+       color: $lightWhite;
+      }
     }
   }
   &--theme-dark {
@@ -26,18 +28,10 @@
 
     .header__button:hover,
     .link:hover {
-      color: $darkBlack;
+      @media only screen and (width > $device-md) {
+        color: $darkBlack;
+      }
     }
-  }
-
-  &:after {
-    content: "";
-    position: relative;
-    top: 60px;
-    right: 0;
-    left: 0;
-    bottom: 10px;
-    background-color: $black;
   }
 
   &__button {

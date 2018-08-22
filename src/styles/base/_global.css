@@ -12,6 +12,12 @@ body {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
+.button, .link {
+  &:focus {
+    outline: none;
+  }
+}
+
 .link {
   color: inherit;
 }

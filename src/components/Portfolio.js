@@ -72,7 +72,7 @@ class Portfolio extends React.Component {
               <h3 className="heading portfolio-item__title section__subtitle">{item.title}</h3>
               <p className="content portfolio-item__content section__content">{item.content}</p>
               <Icons 
-                iconContainer="portfolio-item__icon-container"
+                iconBlock="portfolio-item"
                 icons={item.icons}
                 iconClass="portfolio-item__icon"
               />

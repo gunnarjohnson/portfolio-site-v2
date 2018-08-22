@@ -22,9 +22,9 @@ class Icons extends React.Component {
 
   render() {
     return(
-      <div className={this.props.iconContainer}>
+      <div className={this.props.iconBlock + "__icon-container"}>
       {this.props.icons.map((icon, index) => (
-        <span title={this.iconTitles[icon]} key={index}>
+        <span className={this.props.iconBlock + "__icon-title"} title={this.iconTitles[icon]} key={index}>
           {icon == 'jquery' && <JQueryIcon iconClass={this.props.iconClass} />
           || icon == 'postcss' && <PostCssIcon iconClass={this.props.iconClass} />
           || icon == 'webpack' && <WebpackIcon iconClass={this.props.iconClass} />

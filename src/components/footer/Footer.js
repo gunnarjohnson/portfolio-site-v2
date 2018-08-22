@@ -11,7 +11,7 @@ class Footer extends React.Component {
     return (
       <footer className={"footer footer--theme-" + this.props.theme}>
         <Icons 
-          iconContainer="footer__icon-container"
+          iconBlock="footer"
           icons={this.footerData.icons}
           iconClass="footer__icon"
         />
