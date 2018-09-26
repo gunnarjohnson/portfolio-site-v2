@@ -21,7 +21,7 @@ class Portfolio extends React.Component {
       title: 'Supply Chain Automation',
       content: 'A client website with a custom WordPress theme. Developed pages, header, footer, etc.',
       image: ImgSupplyChain,
-      url: 'https://supplychainautomation.com/',
+      url: 'http://supplychain.dev.square205.com/',
       type: 'Site',
       icons: ['html5', 'css3', 'sass', 'js', 'php', 'wordpress']
     },
