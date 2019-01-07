@@ -839,13 +839,19 @@ footer {
       width: 280px;
       height: 280px;
       border-radius: 3px;
-      box-shadow: 0 1px 25px 2.5px #111d23;
+      transition: box-shadow 0.2s ease-in-out;
     }
 @media screen and (min-width: 576px) {
 .portfolio-item__image {
         width: 300px;
         height: 300px
     }
+      }
+.portfolio-item__image--theme-light {
+        box-shadow: 0 1px 25px 2.5px #111d23;
+      }
+.portfolio-item__image--theme-dark {
+        box-shadow: 0 1px 25px 2.5px #a7c3d1;
       }
 .portfolio-item__container {
       width: 100%;
