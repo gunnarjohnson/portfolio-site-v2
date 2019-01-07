@@ -30,16 +30,16 @@ class Icons extends React.Component {
           || icon == 'webpack' && <WebpackIcon iconClass={this.props.iconClass} />
           || icon == 'coffee' && 
             <FontAwesomeIcon 
-                className={"icon " + this.props.iconClass} 
-                icon={['fas', 'coffee']}
-              />
+              className={"icon " + this.props.iconClass} 
+              icon={['fas', 'coffee']}
+            />
           ||
             <FontAwesomeIcon 
               className={"icon " + this.props.iconClass} 
               icon={['fab', icon]}
             />
           }
-      </span>
+        </span>
       ))}
       </div>
     );
