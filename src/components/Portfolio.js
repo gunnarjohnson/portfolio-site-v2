@@ -2,7 +2,7 @@ import React from 'react';
 import Icons from './icons/Icons';
 import ImgAutoquip from '../assets/images/portfolio_autoquip.png';
 import ImgReactBoilerplate from '../assets/images/portfolio_react-boilerplate.png';
-import ImgLilyDesert from '../assets/images/portfolio_lily-desert.png';
+import ImgEatzis from '../assets/images/portfolio_eatzis.png';
 import ImgOffDist from '../assets/images/portfolio_off-dist.png';
 import ImgPomodoroClock from '../assets/images/portfolio_pomodoro-clock.png';
 import ImgSupplyChain from '../assets/images/portfolio_supply-chain.png';
@@ -18,6 +18,14 @@ class Portfolio extends React.Component {
       icons: ['html5', 'css3', 'sass', 'js', 'react', 'wordpress']
     },
     {
+      title: "Eatzi's", 
+      content: 'An ecommerce store for a client website. Developed custom WordPress plugin with support for multiple locations, pickup date/time metadata, advanced order filtration, etc.',
+      image: ImgEatzis,
+      url: 'https://eatzis.com/',
+      type: 'Site',
+      icons: ['html5', 'css3', 'js', 'php', 'jquery', 'wordpress']
+    },
+    {
       title: 'Supply Chain Automation',
       content: 'A client website with a custom WordPress theme. Developed pages, header, footer, etc.',
       image: ImgSupplyChain,
@@ -30,14 +38,6 @@ class Portfolio extends React.Component {
       content: 'A client website with a customized WordPress theme. Developed pages, forms, footer, etc.',
       image: ImgOffDist,
       url: 'https://ofdist.com/',
-      type: 'Site',
-      icons: ['html5', 'css3', 'js', 'php', 'jquery', 'wordpress']
-    },
-    {
-      title: 'Lily of the Desert',
-      content: 'A client website with multiple WordPress themes. Developed new pages for existing website and added multi-theme functionality.',
-      image: ImgLilyDesert,
-      url: 'http://www.lilyofthedesert.com/',
       type: 'Site',
       icons: ['html5', 'css3', 'js', 'php', 'jquery', 'wordpress']
     },
