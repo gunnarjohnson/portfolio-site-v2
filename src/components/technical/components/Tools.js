@@ -13,6 +13,8 @@ const Tools = () => (
         <ul className="technical-subset__sub-list">
           <li className="technical-subset__sub-list-item">Bootstrap</li>
           {','}
+          <li className="technical-subset__sub-list-item">Laravel</li>
+          {','}
           <li className="technical-subset__sub-list-item">PostCSS</li>
         </ul>
       </li>
@@ -42,9 +44,9 @@ const Tools = () => (
           {','}
           <li className="technical-subset__sub-list-item">NPM</li>
           {','}
-          <li className="technical-subset__sub-list-item">Webpack</li>
+          <li className="technical-subset__sub-list-item">phpMyAdmin</li>
           {','}
-          <li className="technical-subset__sub-list-item">Yarn</li>
+          <li className="technical-subset__sub-list-item">Webpack</li>
         </ul>
       </li>
     </ul>

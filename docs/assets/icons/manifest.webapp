@@ -1,0 +1,14 @@
+{
+  "version": "1.0.1",
+  "name": "react-boilerplate",
+  "description": "This is a React Boilerplate for GitHub Pages.",
+  "icons": {
+    "60": "/assets/icons/firefox_app_60x60.png",
+    "128": "/assets/icons/firefox_app_128x128.png",
+    "512": "/assets/icons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Gunnar Johnson",
+    "url": null
+  }
+}
