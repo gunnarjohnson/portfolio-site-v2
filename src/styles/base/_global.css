@@ -9,7 +9,7 @@ body {
 }
 
 .button, .content, .heading, .icon, .link, .list {
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, fill 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .button, .link {

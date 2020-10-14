@@ -6,7 +6,7 @@ const Tools = () => (
     <ul className="list technical-subset__list section__content">
       <li className="technical-subset__list-item">CMS
         <ul className="technical-subset__sub-list">
-          <li className="technical-subset__sub-list-item">WordPress</li>
+          <li className="technical-subset__sub-list-item">Netlify CMS, WordPress</li>
         </ul>
       </li>
       <li className="technical-subset__list-item">FWKs
@@ -32,6 +32,8 @@ const Tools = () => (
       <li className="technical-subset__list-item">Libs
         <ul className="technical-subset__sub-list">
           <li className="technical-subset__sub-list-item">jQuery</li>
+          {','}
+          <li className="technical-subset__sub-list-item">Pandas</li>
           {','}
           <li className="technical-subset__sub-list-item">React</li>
         </ul>

@@ -13,12 +13,9 @@ class PortfolioApp extends React.Component {
   };
   
   changeTheme = () => {
-    let theme = this.state.theme;
-    if (theme == 'light') {
-      theme = 'dark';
-    } else {
-      theme = 'light';
-    }
+    const previousTheme = this.state.theme;
+    const theme = previousTheme === 'light' ? 'dark' : 'light'
+
     this.setState({ theme });
   };
 

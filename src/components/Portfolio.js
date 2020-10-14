@@ -5,6 +5,7 @@ import ImgReactBoilerplate from '../assets/images/portfolio_react-boilerplate.pn
 import ImgEatzis from '../assets/images/portfolio_eatzis.png';
 import ImgOffDist from '../assets/images/portfolio_off-dist.png';
 import ImgPomodoroClock from '../assets/images/portfolio_pomodoro-clock.png';
+import ImgRedcoatChallenge from '../assets/images/portfolio_redcoat-challenge.png';
 import ImgSupplyChain from '../assets/images/portfolio_supply-chain.png';
 
 class Portfolio extends React.Component {
@@ -30,7 +31,6 @@ class Portfolio extends React.Component {
       content: 'A client website with a custom WordPress theme. Developed pages, header, footer, etc.',
       image: ImgSupplyChain,
       url: 'http://supplychain.dev.square205.com/',
-      type: 'Site',
       icons: ['html5', 'css3', 'sass', 'js', 'php', 'wordpress']
     },
     {
@@ -49,13 +49,13 @@ class Portfolio extends React.Component {
       code: 'https://github.com/gunnarjohnson/react-boilerplate'
     },
     {
-      title: 'Pomodoro Clock',
-      content: 'An interval timer web app built on top of my own custom React boilerplate.',
-      image: ImgPomodoroClock,
-      url: 'https://gunnarjohnson.github.io/fcc-pomodoro-clock/',
-      type: 'App',
-      icons: ['html5', 'css3', 'postcss', 'js', 'react', 'webpack'],
-      code: 'https://github.com/gunnarjohnson/fcc-pomodoro-clock'
+      title: 'The Redcoat Challenge',
+      content: 'A Gatsby site for a not-for-profit homebrew competition. Built with React and Styled Components, and deployed on Netlify.',
+      image: ImgRedcoatChallenge,
+      url: 'https://texasredcoat.com/',
+      type: 'Site',
+      icons: ['html5', 'css3', 'js', 'gatsby', 'react', 'styledcomponents'],
+      code: 'https://github.com/gunnarjohnson/redcoat-challenge/'
     }
   ];
 
@@ -73,6 +73,7 @@ class Portfolio extends React.Component {
                 iconBlock="portfolio-item"
                 icons={item.icons}
                 iconClass="portfolio-item__icon"
+                theme={this.props.theme}
               />
               <div className="portfolio-item__link-container">
                 {!!item.type &&
