@@ -1,15 +1,20 @@
 import React from 'react';
 import Icons from './icons/Icons';
 import ImgAutoquip from '../assets/images/portfolio_autoquip.png';
-import ImgReactBoilerplate from '../assets/images/portfolio_react-boilerplate.png';
+import ImgCreativeLibrary from '../assets/images/portfolio_creative-library.png';
 import ImgEatzis from '../assets/images/portfolio_eatzis.png';
-import ImgOffDist from '../assets/images/portfolio_off-dist.png';
-import ImgPomodoroClock from '../assets/images/portfolio_pomodoro-clock.png';
+import ImgReactBoilerplate from '../assets/images/portfolio_react-boilerplate.png';
 import ImgRedcoatChallenge from '../assets/images/portfolio_redcoat-challenge.png';
 import ImgSupplyChain from '../assets/images/portfolio_supply-chain.png';
 
 class Portfolio extends React.Component {
   portfolioData = [
+    {
+      title: 'Creative Library',
+      content: 'An enterprise application used for marketing design analysis and strategy. Developed ES6 modules and integrated with RESTful APIs.',
+      image: ImgCreativeLibrary,
+      icons: ['html5', 'css3', 'js', 'jquery', 'python', 'django']
+    },
     {
       title: 'Autoquip', 
       content: 'A client website with a custom WordPress theme. Developed pages, components, advanced search functionality, etc.',
@@ -19,8 +24,8 @@ class Portfolio extends React.Component {
       icons: ['html5', 'css3', 'sass', 'js', 'react', 'wordpress']
     },
     {
-      title: "Eatzi's", 
-      content: 'An ecommerce store for a client website. Developed custom WordPress plugin with support for multiple locations, pickup date/time metadata, advanced order filtration, etc.',
+      title: 'Eatzi\'s', 
+      content: 'A custom WordPress plugin for a restaurant\'s ecommerce store. Developed features for multiple locations, scheduled pickups, advanced order filtration, etc.',
       image: ImgEatzis,
       url: 'https://eatzis.com/',
       type: 'Site',
@@ -32,14 +37,6 @@ class Portfolio extends React.Component {
       image: ImgSupplyChain,
       url: 'http://supplychain.dev.square205.com/',
       icons: ['html5', 'css3', 'sass', 'js', 'php', 'wordpress']
-    },
-    {
-      title: 'Office Furniture Distributors',
-      content: 'A client website with a customized WordPress theme. Developed pages, forms, footer, etc.',
-      image: ImgOffDist,
-      url: 'https://ofdist.com/',
-      type: 'Site',
-      icons: ['html5', 'css3', 'js', 'php', 'jquery', 'wordpress']
     },
     {
       title: 'React Boilerplate',
