@@ -3,21 +3,27 @@ import Icons from './icons/Icons';
 import ImgAutoquip from '../assets/images/portfolio_autoquip.png';
 import ImgCreativeLibrary from '../assets/images/portfolio_creative-library.png';
 import ImgEatzis from '../assets/images/portfolio_eatzis.png';
+import ImgPrintOptimizer from '../assets/images/portfolio_print-optimizer.png';
 import ImgReactBoilerplate from '../assets/images/portfolio_react-boilerplate.png';
 import ImgRedcoatChallenge from '../assets/images/portfolio_redcoat-challenge.png';
-import ImgSupplyChain from '../assets/images/portfolio_supply-chain.png';
 
 class Portfolio extends React.Component {
   portfolioData = [
     {
       title: 'Creative Library',
-      content: 'An enterprise application used for marketing design analysis and strategy. Developed ES6 modules and integrated with RESTful APIs.',
+      content: 'An enterprise web application used for marketing design analysis and strategy. Developed ES6 modules and integrated with RESTful APIs.',
       image: ImgCreativeLibrary,
       icons: ['html5', 'css3', 'js', 'jquery', 'python', 'django']
     },
     {
+      title: 'The Print Optimizer',
+      content: 'An enterprise web application used for printer device comparison and sales evaluation. Developed tools for data calculations, complex dropdowns, modals, charts, and graphs.',
+      image: ImgPrintOptimizer,
+      icons: ['html5', 'css3', 'js', 'jquery', 'bootstrap', 'highcharts']
+    },
+    {
       title: 'Autoquip', 
-      content: 'A client website with a custom WordPress theme. Developed pages, components, advanced search functionality, etc.',
+      content: 'A manufacturing website with a custom WordPress theme. Developed pages, React components, and advanced search functionality.',
       image: ImgAutoquip,
       url: 'https://autoquip.com/',
       type: 'Site',
@@ -25,18 +31,11 @@ class Portfolio extends React.Component {
     },
     {
       title: 'Eatzi\'s', 
-      content: 'A custom WordPress plugin for a restaurant\'s ecommerce store. Developed features for multiple locations, scheduled pickups, advanced order filtration, etc.',
+      content: 'A custom WordPress plugin for a restaurant\'s ecommerce store. Developed features for interactive menus, multiple locations, scheduled pickups, and advanced order filtration.',
       image: ImgEatzis,
       url: 'https://eatzis.com/',
       type: 'Site',
       icons: ['html5', 'css3', 'js', 'php', 'jquery', 'wordpress']
-    },
-    {
-      title: 'Supply Chain Automation',
-      content: 'A client website with a custom WordPress theme. Developed pages, header, footer, etc.',
-      image: ImgSupplyChain,
-      url: 'http://supplychain.dev.square205.com/',
-      icons: ['html5', 'css3', 'sass', 'js', 'php', 'wordpress']
     },
     {
       title: 'React Boilerplate',

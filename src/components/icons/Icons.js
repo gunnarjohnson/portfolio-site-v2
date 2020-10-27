@@ -9,11 +9,13 @@ import WebpackIcon from './components/WebpackIcon';
 
 class Icons extends React.Component {
   iconTitles = {
+    bootstrap: 'Bootstrap',
     css3: 'CSS3',
     coffee: 'Developer - An organism that turns coffee into code.',
     django: 'Django',
     gatsby: 'Gatsby',
     gulp: 'Gulp',
+    highcharts: 'Highcharts',
     html5: 'HTML5',
     jquery: 'jQuery',
     js: 'JavaScript',
@@ -35,6 +37,11 @@ class Icons extends React.Component {
           {icon === 'django' && <DjangoIcon iconClass={this.props.iconClass} />
           || icon === 'jquery' && <JQueryIcon iconClass={this.props.iconClass} />
           || icon === 'gatsby' && <GatsbyIcon iconClass={this.props.iconClass} theme={this.props.theme} />
+          || icon === 'highcharts' &&
+            <FontAwesomeIcon 
+              className={"icon " + this.props.iconClass} 
+              icon={['fas', 'chart-bar']}
+            />
           || icon === 'postcss' && <PostCssIcon iconClass={this.props.iconClass} />
           || icon === 'styledcomponents' && <StyledComponentsIcon iconClass={this.props.iconClass} />
           || icon === 'webpack' && <WebpackIcon iconClass={this.props.iconClass} />

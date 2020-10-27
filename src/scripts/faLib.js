@@ -2,6 +2,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 // Icons
 // ## Brands
+import { faBootstrap } from '@fortawesome/free-brands-svg-icons/faBootstrap';
 import { faCss3 } from '@fortawesome/free-brands-svg-icons/faCss3';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faGulp } from '@fortawesome/free-brands-svg-icons/faGulp';
@@ -14,6 +15,7 @@ import { faSass } from '@fortawesome/free-brands-svg-icons/faSass';
 import { faWordpress } from '@fortawesome/free-brands-svg-icons/faWordpress';
 // ## Solid
 import { faAdjust } from '@fortawesome/free-solid-svg-icons/faAdjust';
+import { faChartBar } from '@fortawesome/free-solid-svg-icons/faChartBar';
 import { faClipboardList } from '@fortawesome/free-solid-svg-icons/faClipboardList';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons/faCoffee';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
@@ -21,7 +23,8 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons/faLaptopCode';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons/faPlusCircle';
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 
-const faLib = library.add(
+library.add(
+	faBootstrap,
 	faCss3,
 	faGithub,
 	faGulp,
@@ -33,6 +36,7 @@ const faLib = library.add(
 	faSass,
 	faWordpress,
 	faAdjust,
+	faChartBar,
 	faClipboardList,
 	faCoffee,
 	faEnvelope,

@@ -2,7 +2,7 @@ import React from 'react';
 
 const DjangoIcon = (props) => (
 	<svg
-		class="svg-inline--fa fa-js fa-w-14 icon portfolio-item__icon"
+		className="svg-inline--fa fa-js fa-w-14 icon portfolio-item__icon"
 		viewBox="0 0 256 326"
 		xmlns="http://www.w3.org/2000/svg"
 	>
