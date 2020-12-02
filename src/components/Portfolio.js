@@ -3,9 +3,9 @@ import Icons from './icons/Icons';
 import ImgAutoquip from '../assets/images/portfolio_autoquip.png';
 import ImgCreativeLibrary from '../assets/images/portfolio_creative-library.png';
 import ImgEatzis from '../assets/images/portfolio_eatzis.png';
-import ImgPrintOptimizer from '../assets/images/portfolio_print-optimizer.png';
 import ImgReactBoilerplate from '../assets/images/portfolio_react-boilerplate.png';
 import ImgRedcoatChallenge from '../assets/images/portfolio_redcoat-challenge.png';
+import ImgSalesAnalyzer from '../assets/images/portfolio_sales-analyzer.png';
 
 class Portfolio extends React.Component {
   portfolioData = [
@@ -16,9 +16,9 @@ class Portfolio extends React.Component {
       icons: ['html5', 'css3', 'js', 'jquery', 'python', 'django']
     },
     {
-      title: 'The Print Optimizer',
-      content: 'An enterprise web application used for printer device comparison and sales evaluation. Developed tools for data calculations, complex dropdowns, modals, charts, and graphs.',
-      image: ImgPrintOptimizer,
+      title: 'Sales Analyzer',
+      content: 'An enterprise web application used for product comparison and sales evaluation. Developed tools for data calculations, complex dropdowns, modals, charts, and graphs.',
+      image: ImgSalesAnalyzer,
       icons: ['html5', 'css3', 'js', 'jquery', 'bootstrap', 'highcharts']
     },
     {
