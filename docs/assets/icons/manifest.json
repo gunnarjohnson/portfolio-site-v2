@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
-  "short_name": "react-boilerplate",
-  "description": "This is a React Boilerplate for GitHub Pages.",
+  "name": "portfolio-site-v2",
+  "short_name": "portfolio-site-v2",
+  "description": "The portfolio site of Gunnar Johnson",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
