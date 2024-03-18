@@ -22,8 +22,6 @@ class PortfolioApp extends React.Component {
     this.setState({ theme });
   };
 
-  // TODO
-
   render() {
     const { theme } = this.state;
 
