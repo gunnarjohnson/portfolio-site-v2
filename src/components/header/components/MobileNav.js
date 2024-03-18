@@ -2,53 +2,74 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+const navOptions = [
+  {
+    key: 'about',
+    link: '#about',
+    icon: 'user',
+  },
+  {
+    key: 'portfolio',
+    link: '#portfolio',
+    icon: 'clipboard-list',
+  },
+  {
+    key: 'technical',
+    link: '#technical',
+    icon: 'laptop-code',
+  },
+  {
+    key: 'contact',
+    link: '#contact',
+    icon: 'envelope',
+  },
+];
+
 class MobileNav extends React.Component {
-
-  state = {
-    navItemsVisible: false
-  };
-
-  navOptions = [
-    {
-      link: '#about',
-      icon: 'user'
-    },
-    {
-      link: '#portfolio',
-      icon: 'clipboard-list'
-    },
-    {
-      link: '#technical',
-      icon: 'laptop-code'
-    },
-    {
-      link: '#contact',
-      icon: 'envelope'
-    }
-  ];
+  constructor(props) {
+    super(props);
+    this.state = {
+      navItemsVisible: false,
+    };
+  }
 
   toggleNav = () => {
-    this.setState(prevState => ({
-      navItemsVisible: !prevState.navItemsVisible
+    this.setState((prevState) => ({
+      navItemsVisible: !prevState.navItemsVisible,
     }));
   };
 
+  // TODO
 
   render() {
+    const { navItemsVisible } = this.state;
+
     return (
       <nav className="header__mobile-nav">
-        <div className={"header__mobile-nav-container header__mobile-nav-container--" + (this.state.navItemsVisible ? "visible" : "hidden")}>
-          {this.navOptions.map((navItem, index) => (
-            <AnchorLink className="link header__mobile-nav-link" href={navItem.link} offset='70' key={index}>
-              <FontAwesomeIcon className="header__icon" icon={['fas', navItem.icon]} />
+        <div
+          className={`header__mobile-nav-container header__mobile-nav-container--${navItemsVisible ? 'visible' : 'hidden'}`}
+        >
+          {navOptions.map(({ icon, key, link }) => (
+            <AnchorLink
+              className="link header__mobile-nav-link"
+              href={link}
+              offset="70"
+              key={key}
+            >
+              <FontAwesomeIcon
+                className="header__icon"
+                icon={['fas', icon]}
+              />
             </AnchorLink>
           ))}
         </div>
-        <button 
-          className={"header__button header__mobile-nav-button " + (this.state.navItemsVisible ? "header__mobile-nav-button--visible" : "")}
+        <button
+          aria-label="Toggle nav"
+          className={`header__button header__mobile-nav-button ${navItemsVisible ? 'header__mobile-nav-button--visible' : ''}`}
           onClick={this.toggleNav}
+          type="button"
         >
-          <FontAwesomeIcon 
+          <FontAwesomeIcon
             className="header__icon header__icon--mobile"
             icon={['fas', 'plus-circle']}
           />

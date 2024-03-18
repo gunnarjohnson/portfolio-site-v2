@@ -1,32 +1,40 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Copyright extends React.Component {
-  state = {
-    copyrightYear: 2018,
-    currentYear: undefined
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      copyrightYear: 2018,
+      currentYear: undefined,
+    };
+  }
 
   componentDidMount() {
-    let currentYear = new Date().getFullYear();
-    if (currentYear != this.state.copyrightYear) {
-      this.setState({ currentYear: currentYear });
+    const { copyrightYear } = this.state;
+    const currentYear = new Date().getFullYear();
+
+    if (currentYear !== copyrightYear) {
+      this.setState({ currentYear });
     }
   }
 
   render() {
+    const { copyrightYear, currentYear } = this.state;
+    const { theme } = this.props;
+
     return (
       <div className="copyright">
         <p className="copyright__content section__content">
           <span className="content">
-            ©
-            {' '}
-            {this.state.copyrightYear}
-            {this.state.currentYear && '-' + this.state.currentYear} 
-            {' '}
+            © {copyrightYear}
+            {currentYear && `–${currentYear}`}{' '}
           </span>
-          <a 
-            className={"link copyright__link copyright__link--theme-" + this.props.theme}
-            href="https://github.com/gunnarjohnson/portfolio-site-v2" target="_blank"
+          <a
+            className={`link copyright__link copyright__link--theme-${theme}`}
+            href="https://github.com/gunnarjohnson/portfolio-site-v2"
+            rel="noreferrer"
+            target="_blank"
           >
             Gunnar Johnson
           </a>
@@ -35,5 +43,9 @@ class Copyright extends React.Component {
     );
   }
 }
+
+Copyright.propTypes = {
+  theme: PropTypes.string.isRequired,
+};
 
 export default Copyright;

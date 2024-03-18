@@ -1,11 +1,18 @@
+const postcssImport = require('postcss-import');
+const postcssMediaMinmax = require('postcss-media-minmax');
+const postcssNested = require('postcss-nested');
+const postcssPresetEnv = require('postcss-preset-env');
+const postcssSimpleVars = require('postcss-simple-vars');
+const postcssStripInlineComments = require('postcss-strip-inline-comments');
+
 module.exports = {
   syntax: 'postcss-scss',
   plugins: [
-    require('postcss-import'),
-    require('postcss-simple-vars'),
-    require('postcss-media-minmax'),
-    require('postcss-nested'),
-    require('postcss-strip-inline-comments'),
-    require('postcss-preset-env')
-  ]
+    postcssImport,
+    postcssMediaMinmax,
+    postcssNested,
+    postcssPresetEnv,
+    postcssSimpleVars,
+    postcssStripInlineComments,
+  ],
 };
