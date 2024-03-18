@@ -9,10 +9,10 @@ module.exports = {
   syntax: 'postcss-scss',
   plugins: [
     postcssImport,
+    postcssSimpleVars,
     postcssMediaMinmax,
     postcssNested,
-    postcssPresetEnv,
-    postcssSimpleVars,
     postcssStripInlineComments,
+    postcssPresetEnv,
   ],
 };
