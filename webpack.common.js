@@ -1,19 +1,19 @@
 const path = require('path');
-let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: ['./src/app.js'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         use: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(gif|svg|jpg|png)$/,
@@ -22,16 +22,13 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'assets/images'
-            }
-          }
+              outputPath: 'assets/images',
+            },
+          },
         ],
-        exclude: [
-          /node_modules/,
-          path.resolve(__dirname, 'src/assets/images/unused')
-        ]
-      }
-    ]
+        exclude: [/node_modules/, path.resolve(__dirname, 'src/assets/images/unused')],
+      },
+    ],
   },
   plugins: [
     new FaviconsWebpackPlugin({
@@ -48,9 +45,9 @@ module.exports = {
         opengraph: false,
         twitter: false,
         yandex: false,
-        windows: false
-      }
+        windows: false,
+      },
     }),
-    new HtmlWebpackPlugin({template: './src/index.html'})  
-  ]
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
+  ],
 };

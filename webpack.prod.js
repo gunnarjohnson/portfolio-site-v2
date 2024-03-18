@@ -1,9 +1,9 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
 const CnameWebpackPlugin = require('cname-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const common = require('./webpack.common');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -13,27 +13,27 @@ module.exports = merge(common, {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
           {
             loader: 'postcss-loader',
             options: {
               config: {
-                path: path.resolve(__dirname, 'postcss.config.js')
-              }
-            }
-          }
+                path: path.resolve(__dirname, 'postcss.config.js'),
+              },
+            },
+          },
         ],
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   plugins: [
-    new MiniCssExtractPlugin({filename: 'styles.css'}),
+    new MiniCssExtractPlugin({ filename: 'styles.css' }),
     new CleanWebpackPlugin(),
     new CnameWebpackPlugin({
-      domain: 'www.gunnarjohnson.me'
-    })
-  ]
+      domain: 'www.gunnarjohnson.me',
+    }),
+  ],
 });

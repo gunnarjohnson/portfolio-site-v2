@@ -1,7 +1,7 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
-const common = require('./webpack.common.js');
 const { WebpackPluginServe: Serve } = require('webpack-plugin-serve');
+const common = require('./webpack.common');
 
 module.exports = merge(common, {
   entry: ['webpack-plugin-serve/client'],
@@ -12,24 +12,24 @@ module.exports = merge(common, {
         test: /\.css$/,
         use: [
           'style-loader',
-          { 
-            loader: 'css-loader', 
-            options: { 
-              importLoaders: 1 
-            } 
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
           },
           {
             loader: 'postcss-loader',
             options: {
               config: {
-                path: path.resolve(__dirname, 'postcss.config.js')
-              }
-            }
-          }
+                path: path.resolve(__dirname, 'postcss.config.js'),
+              },
+            },
+          },
         ],
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   plugins: [
     new Serve({
@@ -37,8 +37,8 @@ module.exports = merge(common, {
       liveReload: true,
       open: true,
       port: 8080,
-      static: [path.resolve(__dirname, 'dist')]
-    })
+      static: [path.resolve(__dirname, 'dist')],
+    }),
   ],
-  watch: true
+  watch: true,
 });
