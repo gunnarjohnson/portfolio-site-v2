@@ -39,8 +39,6 @@ class MobileNav extends React.Component {
     }));
   };
 
-  // TODO
-
   render() {
     const { navItemsVisible } = this.state;
 
