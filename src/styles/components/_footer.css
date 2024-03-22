@@ -21,20 +21,29 @@
   }
 
   &__icon {
-      height: 40px;
+      height: 1em;
       margin: 0.25em;
       font-size: 1.75em;
       @media screen and (width >= $device-sm) {
         font-size: 2em;
       }
       @media screen and (width >= $device-lg) {
+        height: 40px;
         font-size: 3em;
       }
 
       &-container {
         display: flex;
+        align-items: center;
         justify-content: center;
+        height: 55px;
         margin: 20px auto;
+        @media screen and (width >= $device-sm) {
+          height: 57px;
+        }
+        @media screen and (width >= $device-lg) {
+          height: 64px;
+        }
       }
     }
 }

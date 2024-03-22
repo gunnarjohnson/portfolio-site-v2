@@ -1,7 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import PortfolioApp from './components/PortfolioApp';
 import './scripts/faLib';
 import './styles/styles.css';
 
-ReactDOM.render(<PortfolioApp />, document.getElementById('app'));
+const container = document.getElementById('app');
+const root = createRoot(container);
+
+root.render(<PortfolioApp />);

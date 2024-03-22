@@ -69,7 +69,9 @@ a {
  */
 abbr[title] {
   border-bottom: none; /* 1 */
+  -webkit-text-decoration: underline;
   text-decoration: underline; /* 2 */
+  text-decoration: underline;
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted; /* 2 */
 }
@@ -416,6 +418,7 @@ body {
       }
 .about__content-link {
       color: inherit;
+      -webkit-text-decoration: underline;
       text-decoration: underline;
       cursor: pointer;
     }
@@ -545,6 +548,7 @@ footer {
     margin: 20px 0;
   }
 .copyright__link {
+    -webkit-text-decoration: none;
     text-decoration: none;
   }
 .footer {
@@ -566,7 +570,7 @@ footer {
       color: #2c68a1;
     }
 .footer__icon {
-      height: 40px;
+      height: 1em;
       margin: 0.25em;
       font-size: 1.75em;
     }
@@ -577,14 +581,27 @@ footer {
       }
 @media screen and (min-width: 992px) {
 .footer__icon {
+        height: 40px;
         font-size: 3em
     }
       }
 .footer__icon-container {
         display: flex;
+        align-items: center;
         justify-content: center;
+        height: 55px;
         margin: 20px auto;
       }
+@media screen and (min-width: 576px) {
+.footer__icon-container {
+          height: 57px
+      }
+        }
+@media screen and (min-width: 992px) {
+.footer__icon-container {
+          height: 64px
+      }
+        }
 .header {
   display: flex;
   justify-content: space-between;
@@ -658,6 +675,7 @@ footer {
     align-items: center;
   }
 .header__desktop-nav-link {
+      -webkit-text-decoration: none;
       text-decoration: none;
     }
 .header__desktop-nav-link + .header__desktop-nav-link {
@@ -876,7 +894,7 @@ footer {
     }
       }
 .portfolio-item__icon {
-      height: 40px;
+      height: 1em;
       margin-bottom: 0.5em;
       font-size: 1.75em;
     }
@@ -887,6 +905,7 @@ footer {
       }
 @media screen and (min-width: 992px) {
 .portfolio-item__icon {
+        height: 40px;
         font-size: 3em
     }
       }
@@ -901,18 +920,26 @@ footer {
         }
 .portfolio-item__icon-container {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         width: 280px;
+        height: 55px;
         margin: 0 auto;
       }
 @media screen and (min-width: 576px) {
 .portfolio-item__icon-container {
+          height: 57px;
           width: 350px
       }
         }
 @media screen and (min-width: 768px) {
 .portfolio-item__icon-container {
           margin: 0
+      }
+        }
+@media screen and (min-width: 992px) {
+.portfolio-item__icon-container {
+          height: 64px
       }
         }
 .portfolio-item__link {
@@ -925,6 +952,7 @@ footer {
       border-radius: 4px;
       font-family: oswald;
       font-size: 1.5em;
+      -webkit-text-decoration: none;
       text-decoration: none;
     }
 @media screen and (min-width: 768px) {

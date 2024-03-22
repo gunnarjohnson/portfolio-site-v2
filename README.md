@@ -1,3 +1,3 @@
-# portfolio-site-v2
+# Portfolio Site
 
-This portfolio site was built by Gunnar Johnson in 2018 utilizing React Boilerplate (https://github.com/gunnarjohnson/react-boilerplate).
+This portfolio site was built by Gunnar Johnson utilizing [React Boilerplate](https://github.com/gunnarjohnson/react-boilerplate).

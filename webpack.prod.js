@@ -1,4 +1,3 @@
-const path = require('path');
 const { merge } = require('webpack-merge');
 const CnameWebpackPlugin = require('cname-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -16,14 +15,7 @@ module.exports = merge(common, {
             loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              config: {
-                path: path.resolve(__dirname, 'postcss.config.js'),
-              },
-            },
-          },
+          'postcss-loader',
         ],
         exclude: /node_modules/,
       },
