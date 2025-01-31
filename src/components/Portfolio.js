@@ -131,7 +131,7 @@ const Portfolio = ({ theme }) => (
   >
     <h2 className="heading portfolio__title section__title">Portfolio</h2>
     {portfolioData.map(
-      ({ codeUrl, shouldUseTheme, content, icons, image, key, siteUrl, title }) => (
+      ({ codeUrl, content, icons, image, key, shouldUseTheme, siteUrl, title }) => (
         <div
           className="portfolio-item"
           key={key}
