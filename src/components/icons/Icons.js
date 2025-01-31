@@ -2,19 +2,29 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import DjangoIcon from './components/DjangoIcon';
+import ExpoIcon from './components/ExpoIcon';
 import GatsbyIcon from './components/GatsbyIcon';
+import GraphQLIcon from './components/GraphQLIcon';
 import JQueryIcon from './components/JQueryIcon';
 import PostCssIcon from './components/PostCssIcon';
 import PostgreSQLIcon from './components/PostgreSQLIcon';
+import RemixIcon from './components/RemixIcon';
 import StyledComponentsIcon from './components/StyledComponentsIcon';
+import TailwindCssIcon from './components/TailwindCssIcon';
+import TypeScriptIcon from './components/TypeScriptIcon';
+import ViteIcon from './components/ViteIcon';
 import WebpackIcon from './components/WebpackIcon';
 
 const iconTitles = {
+  android: 'Android',
+  apple: 'iOS',
   bootstrap: 'Bootstrap',
   css3: 'CSS3',
   coffee: 'Developer - An organism that turns coffee into code.',
   django: 'Django',
+  expo: 'Expo',
   gatsby: 'Gatsby',
+  graphql: 'GraphQL',
   gulp: 'Gulp',
   highcharts: 'Highcharts',
   html5: 'HTML5',
@@ -22,12 +32,17 @@ const iconTitles = {
   js: 'JavaScript',
   node: 'Node',
   php: 'PHP',
-  postcss: 'PostCSS',
+  'post-css': 'PostCSS',
   postgresql: 'PostgreSQL',
   python: 'Python',
   react: 'React',
+  'react-native': 'React Native',
+  remix: 'Remix',
   sass: 'Sass',
-  styledcomponents: 'Styled Components',
+  'styled-components': 'Styled Components',
+  tailwind: 'Tailwind CSS',
+  ts: 'TypeScript',
+  vite: 'Vite',
   vuejs: 'Vue',
   webpack: 'Webpack',
   wordpress: 'WordPress',
@@ -41,7 +56,14 @@ const Icons = ({ iconBlock, iconClass, icons, theme }) => (
         title={iconTitles[icon]}
         key={icon}
       >
-        {(icon === 'django' && <DjangoIcon iconClass={iconClass} />) ||
+        {(icon === 'coffee' && (
+          <FontAwesomeIcon
+            className={`icon ${iconClass}`}
+            icon={['fas', 'coffee']}
+          />
+        )) ||
+          (icon === 'django' && <DjangoIcon iconClass={iconClass} />) ||
+          (icon === 'expo' && <ExpoIcon iconClass={iconClass} />) ||
           (icon === 'jquery' && <JQueryIcon iconClass={iconClass} />) ||
           (icon === 'gatsby' && (
             <GatsbyIcon
@@ -49,22 +71,32 @@ const Icons = ({ iconBlock, iconClass, icons, theme }) => (
               theme={theme}
             />
           )) ||
+          (icon === 'graphql' && <GraphQLIcon iconClass={iconClass} />) ||
           (icon === 'highcharts' && (
             <FontAwesomeIcon
               className={`icon ${iconClass}`}
               icon={['fas', 'chart-bar']}
             />
           )) ||
-          (icon === 'postcss' && <PostCssIcon iconClass={iconClass} />) ||
+          (icon === 'post-css' && <PostCssIcon iconClass={iconClass} />) ||
           (icon === 'postgresql' && <PostgreSQLIcon iconClass={iconClass} />) ||
-          (icon === 'styledcomponents' && <StyledComponentsIcon iconClass={iconClass} />) ||
-          (icon === 'webpack' && <WebpackIcon iconClass={iconClass} />) ||
-          (icon === 'coffee' && (
+          (icon === 'react-native' && (
             <FontAwesomeIcon
               className={`icon ${iconClass}`}
-              icon={['fas', 'coffee']}
+              icon={['fab', 'react']}
             />
-          )) || (
+          )) ||
+          (icon === 'remix' && <RemixIcon iconClass={iconClass} />) ||
+          (icon === 'styled-components' && <StyledComponentsIcon iconClass={iconClass} />) ||
+          (icon === 'tailwind' && <TailwindCssIcon iconClass={iconClass} />) ||
+          (icon === 'ts' && <TypeScriptIcon iconClass={iconClass} />) ||
+          (icon === 'vite' && (
+            <ViteIcon
+              iconClass={iconClass}
+              theme={theme}
+            />
+          )) ||
+          (icon === 'webpack' && <WebpackIcon iconClass={iconClass} />) || (
             <FontAwesomeIcon
               className={`icon ${iconClass}`}
               icon={['fab', icon]}
