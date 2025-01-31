@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Copyright from './components/Copyright';
 import Icons from '../icons/Icons';
 
-const footerIcons = ['html5', 'css3', 'postcss', 'js', 'react', 'webpack', 'coffee'];
+const footerIcons = ['html5', 'css3', 'post-css', 'js', 'react', 'webpack', 'coffee'];
 
 const Footer = ({ theme }) => (
   <footer className={`footer footer--theme-${theme}`}>

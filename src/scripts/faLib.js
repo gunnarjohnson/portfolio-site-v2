@@ -2,6 +2,8 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 // Icons
 // ## Brands
+import { faAndroid } from '@fortawesome/free-brands-svg-icons/faAndroid';
+import { faApple } from '@fortawesome/free-brands-svg-icons/faApple';
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons/faBootstrap';
 import { faCss3 } from '@fortawesome/free-brands-svg-icons/faCss3';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
@@ -26,6 +28,8 @@ import { faPlusCircle } from '@fortawesome/free-solid-svg-icons/faPlusCircle';
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 
 library.add(
+  faAndroid,
+  faApple,
   faBootstrap,
   faCss3,
   faGithub,
