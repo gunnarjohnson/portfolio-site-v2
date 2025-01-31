@@ -48,6 +48,75 @@ const iconTitles = {
   wordpress: 'WordPress',
 };
 
+const renderIcon = (icon, iconClass, theme) => {
+  switch (icon) {
+    case 'coffee':
+      return (
+        <FontAwesomeIcon
+          className={`icon ${iconClass}`}
+          icon={['fas', 'coffee']}
+        />
+      );
+    case 'django':
+      return <DjangoIcon iconClass={iconClass} />;
+    case 'expo':
+      return <ExpoIcon iconClass={iconClass} />;
+    case 'gatsby':
+      return (
+        <GatsbyIcon
+          iconClass={iconClass}
+          theme={theme}
+        />
+      );
+    case 'graphql':
+      return <GraphQLIcon iconClass={iconClass} />;
+    case 'highcharts':
+      return (
+        <FontAwesomeIcon
+          className={`icon ${iconClass}`}
+          icon={['fas', 'chart-bar']}
+        />
+      );
+    case 'jquery':
+      return <JQueryIcon iconClass={iconClass} />;
+    case 'post-css':
+      return <PostCssIcon iconClass={iconClass} />;
+    case 'postgresql':
+      return <PostgreSQLIcon iconClass={iconClass} />;
+    case 'react-native':
+      return (
+        <FontAwesomeIcon
+          className={`icon ${iconClass}`}
+          icon={['fab', 'react']}
+        />
+      );
+    case 'remix':
+      return <RemixIcon iconClass={iconClass} />;
+    case 'styled-components':
+      return <StyledComponentsIcon iconClass={iconClass} />;
+    case 'tailwind':
+      return <TailwindCssIcon iconClass={iconClass} />;
+    case 'ts':
+      return <TypeScriptIcon iconClass={iconClass} />;
+    case 'vite':
+      return (
+        <ViteIcon
+          iconClass={iconClass}
+          theme={theme}
+        />
+      );
+    case 'webpack':
+      return <WebpackIcon iconClass={iconClass} />;
+    default:
+      return (
+        <FontAwesomeIcon
+          className={`icon ${iconClass}`}
+          icon={['fab', icon]}
+        />
+      );
+  }
+};
+
 const Icons = ({ iconBlock, iconClass, icons, theme }) => (
   <div className={`${iconBlock}__icon-container`}>
     {icons.map((icon) => (
@@ -56,52 +125,7 @@ const Icons = ({ iconBlock, iconClass, icons, theme }) => (
         title={iconTitles[icon]}
         key={icon}
       >
-        {(icon === 'coffee' && (
-          <FontAwesomeIcon
-            className={`icon ${iconClass}`}
-            icon={['fas', 'coffee']}
-          />
-        )) ||
-          (icon === 'django' && <DjangoIcon iconClass={iconClass} />) ||
-          (icon === 'expo' && <ExpoIcon iconClass={iconClass} />) ||
-          (icon === 'jquery' && <JQueryIcon iconClass={iconClass} />) ||
-          (icon === 'gatsby' && (
-            <GatsbyIcon
-              iconClass={iconClass}
-              theme={theme}
-            />
-          )) ||
-          (icon === 'graphql' && <GraphQLIcon iconClass={iconClass} />) ||
-          (icon === 'highcharts' && (
-            <FontAwesomeIcon
-              className={`icon ${iconClass}`}
-              icon={['fas', 'chart-bar']}
-            />
-          )) ||
-          (icon === 'post-css' && <PostCssIcon iconClass={iconClass} />) ||
-          (icon === 'postgresql' && <PostgreSQLIcon iconClass={iconClass} />) ||
-          (icon === 'react-native' && (
-            <FontAwesomeIcon
-              className={`icon ${iconClass}`}
-              icon={['fab', 'react']}
-            />
-          )) ||
-          (icon === 'remix' && <RemixIcon iconClass={iconClass} />) ||
-          (icon === 'styled-components' && <StyledComponentsIcon iconClass={iconClass} />) ||
-          (icon === 'tailwind' && <TailwindCssIcon iconClass={iconClass} />) ||
-          (icon === 'ts' && <TypeScriptIcon iconClass={iconClass} />) ||
-          (icon === 'vite' && (
-            <ViteIcon
-              iconClass={iconClass}
-              theme={theme}
-            />
-          )) ||
-          (icon === 'webpack' && <WebpackIcon iconClass={iconClass} />) || (
-            <FontAwesomeIcon
-              className={`icon ${iconClass}`}
-              icon={['fab', icon]}
-            />
-          )}
+        {renderIcon(icon, iconClass, theme)}
       </span>
     ))}
   </div>
