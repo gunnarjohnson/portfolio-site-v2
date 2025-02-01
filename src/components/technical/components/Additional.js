@@ -7,23 +7,23 @@ const Additional = () => (
       <li className="technical-subset__list-item">
         Audio
         <ul className="technical-subset__sub-list">
-          <li className="technical-subset__sub-list-item">Audition</li>,
-          <li className="technical-subset__sub-list-item">Pro Tools</li>,
+          <li className="technical-subset__sub-list-item">Audition</li>
+          <li className="technical-subset__sub-list-item">Pro Tools</li>
           <li className="technical-subset__sub-list-item">REAPER</li>
         </ul>
       </li>
       <li className="technical-subset__list-item">
-        Graphics
+        Images
         <ul className="technical-subset__sub-list">
-          <li className="technical-subset__sub-list-item">Illustrator</li>,
+          <li className="technical-subset__sub-list-item">Illustrator</li>
           <li className="technical-subset__sub-list-item">Photoshop</li>
         </ul>
       </li>
       <li className="technical-subset__list-item">
         Video
         <ul className="technical-subset__sub-list">
-          <li className="technical-subset__sub-list-item">After Effects</li>,
-          <li className="technical-subset__sub-list-item">Final Cut Pro</li>,
+          <li className="technical-subset__sub-list-item">After Effects</li>
+          <li className="technical-subset__sub-list-item">Final Cut Pro</li>
           <li className="technical-subset__sub-list-item">Premiere Pro</li>
         </ul>
       </li>
