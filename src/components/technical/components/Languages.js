@@ -1,6 +1,6 @@
 import React from 'react';
 
-const languagesList = [
+const listItems = [
   'JavaScript',
   'TypeScript',
   'HTML',
@@ -16,12 +16,12 @@ const Languages = () => (
   <div className="technical-subset">
     <h3 className="heading technical-subset__title section__subtitle">Languages</h3>
     <ul className="list technical-subset__list content section__content">
-      {languagesList.map((language) => (
+      {listItems.map((listItem) => (
         <li
-          key={language}
+          key={listItem}
           className="technical-subset__list-item technical-subset__list-item--inline"
         >
-          {language}
+          {listItem}
         </li>
       ))}
     </ul>
