@@ -1,32 +1,42 @@
 import React from 'react';
 
+const listItems = [
+  {
+    listItem: 'Audio',
+    subListItems: ['Audition', 'Pro Tools', 'REAPER'],
+  },
+  {
+    listItem: 'Images',
+    subListItems: ['Illustrator', 'Photoshop'],
+  },
+  {
+    listItem: 'Video',
+    subListItems: ['After Effects', 'Final Cut Pro', 'Premiere Pro'],
+  },
+];
+
 const Additional = () => (
   <div className="technical-subset">
     <h3 className="heading technical-subset__title section__subtitle">Additional</h3>
     <ul className="list technical-subset__list section__content">
-      <li className="technical-subset__list-item">
-        Audio
-        <ul className="technical-subset__sub-list">
-          <li className="technical-subset__sub-list-item">Audition</li>
-          <li className="technical-subset__sub-list-item">Pro Tools</li>
-          <li className="technical-subset__sub-list-item">REAPER</li>
-        </ul>
-      </li>
-      <li className="technical-subset__list-item">
-        Images
-        <ul className="technical-subset__sub-list">
-          <li className="technical-subset__sub-list-item">Illustrator</li>
-          <li className="technical-subset__sub-list-item">Photoshop</li>
-        </ul>
-      </li>
-      <li className="technical-subset__list-item">
-        Video
-        <ul className="technical-subset__sub-list">
-          <li className="technical-subset__sub-list-item">After Effects</li>
-          <li className="technical-subset__sub-list-item">Final Cut Pro</li>
-          <li className="technical-subset__sub-list-item">Premiere Pro</li>
-        </ul>
-      </li>
+      {listItems.map(({ listItem, subListItems }) => (
+        <li
+          key={listItem}
+          className="technical-subset__list-item"
+        >
+          {listItem}
+          <ul className="technical-subset__sub-list">
+            {subListItems.map((subListItem) => (
+              <li
+                key={subListItem}
+                className="technical-subset__sub-list-item"
+              >
+                {subListItem}
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
     </ul>
   </div>
 );
