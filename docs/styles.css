@@ -3,6 +3,16 @@
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 
+/* Variables*/
+/* Colors*/
+/* Light Theme*/
+/* Dark Theme*/
+/* Neutral*/
+/* Device Widths*/
+/* Typography*/
+/* Fonts*/
+/* Base*/
+/* Libraries*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -281,6 +291,7 @@ template {
 [hidden] {
   display: none;
 }
+/* Global*/
 html {
   height: 100%;
 }
@@ -296,6 +307,8 @@ body {
 .link {
   color: inherit;
 }
+/* Fonts*/
+/* Section*/
 .section {
   margin: 0 20px;
 }
@@ -377,6 +390,8 @@ body {
 .section__content--uppercase {
       text-transform: uppercase;
     }
+/* Components*/
+/* About*/
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -422,6 +437,7 @@ body {
       text-decoration: underline;
       cursor: pointer;
     }
+/* Portfolio App*/
 .app-container {
   position: relative;
   min-height: calc(100vh - 137.5px);
@@ -459,6 +475,7 @@ body {
     padding-bottom: 160px
 }
   }
+/* Contact*/
 .contact {
   display: flex;
   flex-direction: column;
@@ -537,6 +554,7 @@ body {
       margin-left: 40px
   }
     }
+/* Copyright*/
 footer {
   position: absolute;
   right: 0;
@@ -551,6 +569,7 @@ footer {
     -webkit-text-decoration: none;
     text-decoration: none;
   }
+/* Footer*/
 .footer {
   margin: 0;
   transition: background-color 0.2s ease-in-out;
@@ -602,6 +621,7 @@ footer {
           height: 64px
       }
         }
+/* Header*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -714,6 +734,7 @@ footer {
 .header__mobile-nav-button--visible {
         transform: rotate(225deg);
       }
+/* Hero*/
 .hero {
   padding: 50px 0;
   text-align: center;
@@ -796,6 +817,7 @@ footer {
         margin-top: 20px
     }
       }
+/* Portfolio*/
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -836,7 +858,7 @@ footer {
   }
     }
 @media screen and (min-width: 768px) {
-.portfolio-item:nth-child(even) .portfolio-item__container { 
+.portfolio-item:nth-child(even) .portfolio-item__container {
             margin-right: 0
         }
           }
@@ -846,7 +868,7 @@ footer {
         }
           }
 @media screen and (min-width: 768px) {
-.portfolio-item:nth-child(odd) .portfolio-item__container { 
+.portfolio-item:nth-child(odd) .portfolio-item__container {
             margin-left: 0
         }
           }
@@ -863,10 +885,10 @@ footer {
     }
       }
 .portfolio-item__image--theme-light {
-        box-shadow: 0 1px 25px 2.5px #111d23;
+        box-shadow: 0 1px 8px 2px #111d23;
       }
 .portfolio-item__image--theme-dark {
-        box-shadow: 0 1px 25px 2.5px #a7c3d1;
+        box-shadow: 0 1px 8px 2px #a7c3d1;
       }
 .portfolio-item__container {
       width: 100%;
@@ -973,8 +995,8 @@ footer {
         background-color: #2c68a1;
       }
 .portfolio-item__link--theme-dark:hover {
-            background-color: #a7c3d1;
-          }
+          background-color: #a7c3d1;
+        }
 .portfolio-item__link-container {
         display: flex;
         justify-content: space-between;
@@ -991,6 +1013,7 @@ footer {
           margin: 0
       }
         }
+/* Technical*/
 .technical {
   display: flex;
   flex-wrap: wrap;
@@ -1043,14 +1066,25 @@ footer {
       padding: 0;
       list-style: none;
     }
+.technical-subset__list-item {
+        display: flex;
+        justify-content: space-between;
+      }
+.technical-subset__list-item--inline {
+          display: inline;
+        }
+.technical-subset__list-item--inline:not(:last-child)::after {
+            content: ', ';
+          }
 .technical-subset__sub-list {
+      flex-basis: calc(100% - 4em);
       display: inline;
+      margin-left: 0.5em;
       padding: 0;
       list-style: none;
     }
 .technical-subset__sub-list-item {
         display: inline;
-        margin-left: 0.5em;
         font-size: 0.55em;
         font-style: italic;
       }
@@ -1058,5 +1092,8 @@ footer {
 .technical-subset__sub-list-item {
           font-size: 0.8em
       }
+        }
+.technical-subset__sub-list-item:not(:last-child)::after {
+          content: ', ';
         }
 
