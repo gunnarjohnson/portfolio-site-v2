@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import About from './About';
 import Contact from './Contact';
 import Footer from './footer/Footer';
@@ -7,39 +7,28 @@ import Hero from './Hero';
 import Portfolio from './Portfolio';
 import Technical from './technical/Technical';
 
-class PortfolioApp extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      theme: 'light',
-    };
-  }
+const themes = ['light', 'dark'];
+const [lightTheme, darkTheme] = themes;
 
-  changeTheme = () => {
-    const { theme: previousTheme } = this.state;
-    const theme = previousTheme === 'light' ? 'dark' : 'light';
+const PortfolioApp = () => {
+  const [theme, setTheme] = useState(lightTheme);
+  const changeTheme = () =>
+    setTheme((previousTheme) => (previousTheme === lightTheme ? darkTheme : lightTheme));
 
-    this.setState({ theme });
-  };
-
-  render() {
-    const { theme } = this.state;
-
-    return (
-      <div className={`app-container app-container--theme-${theme}`}>
-        <Header
-          theme={theme}
-          changeTheme={this.changeTheme}
-        />
-        <Hero theme={theme} />
-        <About theme={theme} />
-        <Portfolio theme={theme} />
-        <Technical theme={theme} />
-        <Contact theme={theme} />
-        <Footer theme={theme} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className={`app-container app-container--theme-${theme}`}>
+      <Header
+        theme={theme}
+        changeTheme={changeTheme}
+      />
+      <Hero theme={theme} />
+      <About theme={theme} />
+      <Portfolio theme={theme} />
+      <Technical theme={theme} />
+      <Contact theme={theme} />
+      <Footer theme={theme} />
+    </div>
+  );
+};
 
 export default PortfolioApp;
