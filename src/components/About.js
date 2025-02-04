@@ -9,7 +9,9 @@ const About = ({ theme }) => (
     <h2 className="heading about__title section__title">About</h2>
     <p className="about__content section__content">
       <span className="content about__content-block">
-        <span className="section__content--uppercase">I build web applications and websites. </span>
+        <span className="section__content--uppercase">
+          I build web apps, mobile apps, and websites.{' '}
+        </span>
         The Internet is always evolving and I love learning its new technologies. Every day affords
         fresh opportunities to innovate.
       </span>
