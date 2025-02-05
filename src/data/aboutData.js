@@ -1,4 +1,4 @@
-const aboutData = [
+const contentBlocks = [
   {
     id: 1,
     introduction: 'I build web apps, mobile apps, and websites.',
@@ -18,4 +18,4 @@ const aboutData = [
   },
 ];
 
-export default aboutData;
+export default { contentBlocks };
