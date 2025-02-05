@@ -2,6 +2,8 @@ import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons/faFacebookS
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons/faGithubSquare';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 
+const heroTitle = 'Gunnar Johnson';
+const heroContent = 'Software Engineer';
 const heroIcons = [
   {
     ariaLabel: 'Visit Facebook page',
@@ -20,4 +22,4 @@ const heroIcons = [
   },
 ];
 
-export default { heroIcons };
+export default { heroContent, heroIcons, heroTitle };
