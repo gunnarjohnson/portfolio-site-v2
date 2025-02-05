@@ -6,7 +6,7 @@ const { copyrightName, copyrightUrl, copyrightYear } = footerData;
 
 const Copyright = ({ theme }) => {
   const currentYear = new Date().getFullYear();
-  const shouldDisplayCurrentYear = currentYear !== copyrightYear;
+  const shouldDisplayCurrentYear = currentYear > copyrightYear;
 
   return (
     <div className="copyright">
