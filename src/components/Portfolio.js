@@ -28,7 +28,7 @@ const portfolioData = [
     key: 'webApplication',
     title: 'Web Application',
     content:
-      'Designed and implemented the foundational architecture of a web application for a leading nonprofit health system, ensuring scalability, maintainability, and a robust structure to support future development.',
+      'A web application for a leading nonprofit health system. Designed and implemented the foundational architecture, including project setup, initial components, tooling configuration, routing, and testing.',
     image: ImgWebApplication,
     shouldUseTheme: true,
     icons: ['ts', 'react', 'remix', 'vite', 'tailwind', 'node'],
