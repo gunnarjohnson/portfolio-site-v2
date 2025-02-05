@@ -1,25 +1,13 @@
 import React from 'react';
+import technicalData from '../../../data/technicalData';
 
-const listItems = [
-  {
-    listItem: 'Audio',
-    subListItems: ['Audition', 'Pro Tools', 'REAPER'],
-  },
-  {
-    listItem: 'Images',
-    subListItems: ['Illustrator', 'Photoshop'],
-  },
-  {
-    listItem: 'Video',
-    subListItems: ['After Effects', 'Final Cut Pro', 'Premiere Pro'],
-  },
-];
+const { additionalListItems } = technicalData;
 
 const Additional = () => (
   <div className="technical-subset">
     <h3 className="heading technical-subset__title section__subtitle">Additional</h3>
     <ul className="list technical-subset__list section__content">
-      {listItems.map(({ listItem, subListItems }) => (
+      {additionalListItems.map(({ listItem, subListItems }) => (
         <li
           key={listItem}
           className="technical-subset__list-item"
