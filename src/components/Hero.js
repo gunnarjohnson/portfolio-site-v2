@@ -1,27 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons/faFacebookSquare';
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons/faGithubSquare';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import heroData from '../data/heroData';
 
-const heroIcons = [
-  {
-    ariaLabel: 'Visit Facebook page',
-    icon: faFacebookSquare,
-    url: 'https://www.facebook.com/gunnarjohnson',
-  },
-  {
-    ariaLabel: 'Visit GitHub page',
-    icon: faGithubSquare,
-    url: 'https://github.com/gunnarjohnson',
-  },
-  {
-    ariaLabel: 'Visit LinkedIn page',
-    icon: faLinkedin,
-    url: 'https://www.linkedin.com/in/gunnarmjohnson',
-  },
-];
+const { heroIcons } = heroData;
 
 const Hero = ({ theme }) => (
   <section className={`hero section section--theme-${theme}`}>
