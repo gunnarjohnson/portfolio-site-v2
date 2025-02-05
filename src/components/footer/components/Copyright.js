@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import footerData from '../../../data/footerData';
+
+const { copyrightName, copyrightUrl, copyrightYear: defaultCopyrightYear } = footerData;
 
 class Copyright extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      copyrightYear: 2018,
+      copyrightYear: defaultCopyrightYear,
       currentYear: undefined,
     };
   }
@@ -32,11 +35,11 @@ class Copyright extends React.Component {
           </span>
           <a
             className={`link copyright__link copyright__link--theme-${theme}`}
-            href="https://github.com/gunnarjohnson/portfolio-site-v2"
+            href={copyrightUrl}
             rel="noreferrer"
             target="_blank"
           >
-            Gunnar Johnson
+            {copyrightName}
           </a>
         </p>
       </div>
