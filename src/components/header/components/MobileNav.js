@@ -1,29 +1,9 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import headerData from '../../../data/headerData';
 
-const navOptions = [
-  {
-    key: 'about',
-    link: '#about',
-    icon: 'user',
-  },
-  {
-    key: 'portfolio',
-    link: '#portfolio',
-    icon: 'clipboard-list',
-  },
-  {
-    key: 'technical',
-    link: '#technical',
-    icon: 'laptop-code',
-  },
-  {
-    key: 'contact',
-    link: '#contact',
-    icon: 'envelope',
-  },
-];
+const { navOptions } = headerData;
 
 class MobileNav extends React.Component {
   constructor(props) {
@@ -47,10 +27,10 @@ class MobileNav extends React.Component {
         <div
           className={`header__mobile-nav-container header__mobile-nav-container--${navItemsVisible ? 'visible' : 'hidden'}`}
         >
-          {navOptions.map(({ icon, key, link }) => (
+          {navOptions.map(({ icon, key, url }) => (
             <AnchorLink
               className="link header__mobile-nav-link"
-              href={link}
+              href={url}
               offset="70"
               key={key}
             >
