@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Copyright from './components/Copyright';
 import Icons from '../icons/Icons';
+import footerData from '../../data/footerData';
 
-const footerIcons = ['html5', 'css3', 'post-css', 'js', 'react', 'webpack', 'coffee'];
+const { footerIcons } = footerData;
 
 const Footer = ({ theme }) => (
   <footer className={`footer footer--theme-${theme}`}>
