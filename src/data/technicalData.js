@@ -4,8 +4,8 @@ const additionalListItems = [
     subListItems: ['Audition', 'Pro Tools', 'REAPER'],
   },
   {
-    listItem: 'Images',
-    subListItems: ['Illustrator', 'Photoshop'],
+    listItem: 'Graphics',
+    subListItems: ['Figma', 'Illustrator', 'Photoshop'],
   },
   {
     listItem: 'Video',
@@ -27,7 +27,6 @@ const languagesListItems = [
   'HTML',
   'CSS',
   'Markdown',
-  'Node.js',
   'SQL',
   'Python',
   'PHP',
@@ -35,30 +34,37 @@ const languagesListItems = [
 
 const toolsListItems = [
   {
-    listItem: 'CMS',
+    listItem: 'CMSs',
     subListItems: ['Netlify CMS', 'Payload CMS', 'WordPress'],
   },
   {
     listItem: 'FWKs',
-    subListItems: ['Vue', 'Remix', 'Gatsby', 'PostCSS', 'Tailwind CSS', 'Bootstrap', 'Laravel'],
+    subListItems: ['Vue', 'Gatsby', 'Remix', 'PostCSS', 'Tailwind CSS', 'Bootstrap', 'Laravel'],
   },
   {
     listItem: 'Libs',
-    subListItems: ['React', 'React Native', 'TanStack Query', 'TanStack Router', 'jQuery'],
+    subListItems: [
+      'React',
+      'React Native',
+      'TanStack Query',
+      'TanStack Router',
+      'Material UI',
+      'jQuery',
+    ],
   },
   {
     listItem: 'Misc',
     subListItems: [
+      'Redux Toolkit',
       'React Testing Library',
       'Jest',
       'Vite',
       'Webpack',
       'Sass',
-      'Storybook',
       'Git',
+      'Node.js',
       'PostgreSQL',
       'MySQL',
-      'Figma',
     ],
   },
 ];

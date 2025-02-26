@@ -52,6 +52,10 @@
           }
         }
       }
+
+      &-title {
+        min-width: 4em;
+      }
     }
 
     &__sub-list {
