@@ -12,7 +12,7 @@ const Additional = () => (
           key={listItem}
           className="technical-subset__list-item"
         >
-          {listItem}
+          <span className="technical-subset__list-title">{listItem}</span>
           <ul className="technical-subset__sub-list">
             {subListItems.map((subListItem) => (
               <li
