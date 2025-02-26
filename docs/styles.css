@@ -1076,6 +1076,9 @@ footer {
 .technical-subset__list-item--inline:not(:last-child)::after {
             content: ', ';
           }
+.technical-subset__list-title {
+        min-width: 4em;
+      }
 .technical-subset__sub-list {
       flex-basis: calc(100% - 4em);
       display: inline;
