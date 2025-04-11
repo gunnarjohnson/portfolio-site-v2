@@ -1,25 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Copyright from './components/Copyright';
 import Icons from '../icons/Icons';
 import footerData from '../../data/footerData';
+import useTheme from '../../hooks/useTheme';
 
 const { footerIcons } = footerData;
 
-const Footer = ({ theme }) => (
-  <footer className={`footer footer--theme-${theme}`}>
-    <Icons
-      iconBlock="footer"
-      icons={footerIcons}
-      iconClass="footer__icon"
-      theme={theme}
-    />
-    <Copyright theme={theme} />
-  </footer>
-);
+const Footer = () => {
+  const { theme } = useTheme();
 
-Footer.propTypes = {
-  theme: PropTypes.string.isRequired,
+  return (
+    <footer className={`footer footer--theme-${theme}`}>
+      <Icons
+        iconBlock="footer"
+        icons={footerIcons}
+        iconClass="footer__icon"
+      />
+      <Copyright />
+    </footer>
+  );
 };
 
 export default Footer;

@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import useTheme from '../../../hooks/useTheme';
 
-const ViteIcon = ({ iconClass, theme }) => {
+const ViteIcon = ({ iconClass }) => {
+  const { theme } = useTheme();
   const isLightTheme = theme === 'light';
   const foregroundColor = isLightTheme ? '#a7c3d1' : 'currentColor';
   const backgroundColor = isLightTheme ? '#2c2e33' : '#2c68a1';
@@ -61,7 +63,6 @@ const ViteIcon = ({ iconClass, theme }) => {
 
 ViteIcon.propTypes = {
   iconClass: PropTypes.string.isRequired,
-  theme: PropTypes.string.isRequired,
 };
 
 export default ViteIcon;
