@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import About from './About';
 import Contact from './Contact';
 import Footer from './footer/Footer';
@@ -6,27 +6,20 @@ import Header from './header/Header';
 import Hero from './Hero';
 import Portfolio from './Portfolio';
 import Technical from './technical/Technical';
-
-const themes = ['light', 'dark'];
-const [lightTheme, darkTheme] = themes;
+import useTheme from '../hooks/useTheme';
 
 const PortfolioApp = () => {
-  const [theme, setTheme] = useState(lightTheme);
-  const changeTheme = () =>
-    setTheme((previousTheme) => (previousTheme === lightTheme ? darkTheme : lightTheme));
+  const { theme } = useTheme();
 
   return (
     <div className={`app-container app-container--theme-${theme}`}>
-      <Header
-        theme={theme}
-        changeTheme={changeTheme}
-      />
-      <Hero theme={theme} />
-      <About theme={theme} />
-      <Portfolio theme={theme} />
-      <Technical theme={theme} />
-      <Contact theme={theme} />
-      <Footer theme={theme} />
+      <Header />
+      <Hero />
+      <About />
+      <Portfolio />
+      <Technical />
+      <Contact />
+      <Footer />
     </div>
   );
 };

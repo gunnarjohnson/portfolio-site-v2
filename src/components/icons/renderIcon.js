@@ -14,7 +14,7 @@ import TypeScriptIcon from './components/TypeScriptIcon';
 import ViteIcon from './components/ViteIcon';
 import WebpackIcon from './components/WebpackIcon';
 
-const renderIcon = (icon, iconClass, theme) => {
+const renderIcon = (icon, iconClass) => {
   switch (icon) {
     case 'coffee':
       return (
@@ -28,12 +28,7 @@ const renderIcon = (icon, iconClass, theme) => {
     case 'expo':
       return <ExpoIcon iconClass={iconClass} />;
     case 'gatsby':
-      return (
-        <GatsbyIcon
-          iconClass={iconClass}
-          theme={theme}
-        />
-      );
+      return <GatsbyIcon iconClass={iconClass} />;
     case 'graphql':
       return <GraphQLIcon iconClass={iconClass} />;
     case 'highcharts':
@@ -65,12 +60,7 @@ const renderIcon = (icon, iconClass, theme) => {
     case 'ts':
       return <TypeScriptIcon iconClass={iconClass} />;
     case 'vite':
-      return (
-        <ViteIcon
-          iconClass={iconClass}
-          theme={theme}
-        />
-      );
+      return <ViteIcon iconClass={iconClass} />;
     case 'webpack':
       return <WebpackIcon iconClass={iconClass} />;
     default:

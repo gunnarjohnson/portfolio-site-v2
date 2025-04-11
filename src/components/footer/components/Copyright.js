@@ -1,10 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import footerData from '../../../data/footerData';
+import useTheme from '../../../hooks/useTheme';
 
 const { copyrightName, copyrightUrl, copyrightYear } = footerData;
 
-const Copyright = ({ theme }) => {
+const Copyright = () => {
+  const { theme } = useTheme();
   const currentYear = new Date().getFullYear();
   const shouldDisplayCurrentYear = currentYear > copyrightYear;
 
@@ -26,10 +27,6 @@ const Copyright = ({ theme }) => {
       </p>
     </div>
   );
-};
-
-Copyright.propTypes = {
-  theme: PropTypes.string.isRequired,
 };
 
 export default Copyright;
